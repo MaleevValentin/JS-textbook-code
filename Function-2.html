@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function-2</title>
+</head>
+<body>
+<script>
+    // function func() {
+    //     return '!';
+    // }
+    // alert(func);
+
+    // function func() {
+    //     return 'Juventus';
+    // }
+    // func = 123;
+    // alert(func);
+
+    // function func1() {
+    //     return 3;
+    // }
+    // let func2 = func1;
+    // alert(func1() + func2());
+
+    // let func1 = function () {
+    //     return 1;
+    // };
+    //
+    // let func2 = function () {
+    //     return 2;
+    // };
+    // alert(func1() + func2());
+
+    // alert(func());
+    // let func = function () {
+    //     return 6;
+    // }; // будет ошибка
+
+    // test();
+    // let test = function func() {
+    //     alert('!');
+    // };
+
+    // func();
+    // alert(function func() {
+    //     alert('!');
+    // });
+
+    // func();
+    // + 1
+    // function func() {
+    //     alert('!');
+    // } + 1;
+
+
+    // func();
+    // function func() {
+    //     alert('!');
+    // } + alert('!');
+
+    // let arr = [
+    //     function () {
+    //         alert('1')
+    //     },
+    //     function () {
+    //         alert('2')
+    //     },
+    //     function () {
+    //         alert('3')
+    //     },
+    // ];
+    //
+    // alert(arr[0]); // увидим исходный код первой функции
+
+    // let arr = [
+    //     function () {
+    //         return 1;
+    //     }, function () {
+    //         return 2;
+    //     }, function () {
+    //         return 3
+    //     }];
+    // console.log(arr[2]());
+    // console.log(arr[0]() + arr[1]() + arr[2]());
+    // for (let elem of arr) {
+    //     console.log(elem());
+    // }
+
+    // let obj = {
+    //     func1: function () {
+    //         return 1;
+    //     },
+    //     func2: function () {
+    //         return 2;
+    //     },
+    //     func3: function () {
+    //         return 3;
+    //     }
+    // };
+    // alert(obj.func1() + obj.func2() + obj.func3());
+    // for (let key in obj) {
+    //     alert(obj[key]());
+    // }
+
+    // let obj = {
+    //     func1: function (arr) {
+    //         let sum = 0;
+    //         for (let elem of arr) {
+    //             sum += +elem;
+    //         }
+    //         return sum;
+    //     },
+    //     func2: function (arr) {
+    //         let sum = 0;
+    //         for (let elem of arr) {
+    //             sum += +elem * +elem;
+    //         }
+    //         return sum;
+    //     },
+    //     func3: function (arr) {
+    //         let sum = 0;
+    //         for (let elem of arr) {
+    //             sum += +elem * +elem * +elem;
+    //         }
+    //         return sum;
+    //     }
+    // };
+    // console.log(obj.func1([1, 2, 3]));
+    // console.log(obj.func2([1, 2, 3]));
+    // console.log(obj.func3([1, 2, 3]));
+
+
+    // test(function () {
+    //     return 1;
+    // }, function () {
+    //     return 2;
+    // }, function () {
+    //     return 3;
+    // });
+    //
+    // function test(func1, func2, func3) {
+    //     alert(func1() + func2() + func3());
+    // }
+
+    // function get1() {
+    //     return 1;
+    // }
+    //
+    // function get2() {
+    //     return 2;
+    // }
+    //
+    // function get3() {
+    //     return 3;
+    // }
+    //
+    // test(get1, get2, get3);
+    //
+    // function test(func1, func2, func3) {
+    //     alert(func1() + func2() + func3());
+    // }
+
+    // function func1() {
+    //     return 1;
+    // }
+    //
+    // function func2() {
+    //     return 2;
+    // }
+    //
+    // function func3() {
+    //     return 3;
+    // }
+    //
+    // test(func1, func2, func3);
+    //
+    // function test(func1, func2, func3) {
+    //     alert(func1() + func2() + func3());
+    // }
+
+    // let func1 = function () {
+    //     return 1;
+    // };
+    //
+    // let func2 = function () {
+    //     return 2;
+    // };
+    //
+    // let func3 = function () {
+    //     return 3;
+    // };
+    //
+    // test(func1, func2, func3);
+    //
+    // function test(func1, func2, func3) {
+    //     alert(func1() + func2() + func3());
+    //}
+
+    // function test(func) {
+    //     alert(func(3));
+    // }
+    //
+    // test(function (num) {
+    //     return num * num * num;
+    // });
+
+    // function test(func) {
+    //     alert(func(3));
+    // }
+    //
+    // function func(num) {
+    //     return num * num * num;
+    // }
+    //
+    // test(func);
+
+    // function test(func) {
+    //     alert(func(3));
+    // }
+    //
+    // let func = function (num) {
+    //     return num * num * num;
+    // };
+    //
+    // test(func);
+
+    // function func(num1, num2) {
+    //     return num1 + num2;
+    // }
+    //
+    // function test(func) {
+    //     alert(func(2, 3));
+    // }
+    //
+    // test(func);
+
+    // function test(num, func1, func2) {
+    //     return alert(func1(num) + func2(num));
+    // }
+    //
+    // function func1(num) {
+    //     return num * num;
+    // }
+    //
+    // function func2(num) {
+    //     return num * num * num;
+    // }
+    //
+    // test(3, func1, func2);
+
+    // function test(arr, func) {
+    //     for (let i = 0; i < arr.length; i++) {
+    //         arr[i] = func(arr[i]);
+    //     }
+    //     return arr;
+    // }
+    //
+    // let result = test([1, 2, 3], function (num) {
+    //     return num * num * num;
+    // });
+    // console.log(result);
+
+
+    // let test = function func() {
+    //     alert(func); // функция выведет свой же исходный код
+    // };
+    //
+    // test(); // вызываем функцию
+
+    // function func(num1, num2) {
+    //     function square(num) {
+    //         return num * num;
+    //     }
+    //
+    //     function cube(num) {
+    //         return num * num * num;
+    //     }
+    //
+    //     return square(num1) + cube(num2);
+    // }
+    // alert(func(2, 3));
+
+
+    // function test() {
+    //     let num;
+    //
+    //     function func() {
+    //         alert(num);
+    //     }
+    //
+    //     num = 1;
+    //     func();
+    //
+    //     num = 2;
+    //     func();
+    // }
+    //
+    // test();
+
+    // function func1() {
+    //     return function () {
+    //         return 1;
+    //     }
+    // }
+    //
+    // function func2() {
+    //     return function () {
+    //         return 2;
+    //     }
+    // }
+    // alert(func1()() + func2()());
+
+    // function func() {
+    //     return function () {
+    //         return function () {
+    //             return function () {
+    //                 return function () {
+    //                     return '!';
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    //
+    // alert(func()()()()());
+
+    // function func(num1) {
+    //     return function (num2) {
+    //         return function (num3) {
+    //             return num1 + num2 + num3;
+    //         }
+    //     }
+    // }
+    //
+    // alert(func(2)(3)(4));
+
+    // function func(num1) {
+    //     return function (num2) {
+    //         return function (num3) {
+    //             return function (num4) {
+    //                 return function () {
+    //                     return [num1, num2, num3, num4];
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    //
+    // console.log(func(2)(3)(4)(5)());
+
+    // function test() {
+    //     let num = 1;
+    //     return function() {
+    //         alert(num);
+    //         num++;
+    //     }
+    // }
+    // let func1 = test();
+    // func1();
+    // func1();
+
+    // function test() {
+    //     let num = 10;
+    //     return function () {
+    //         num--;
+    //         if (num < 0) {
+    //             alert('Отсчет окончен');
+    //         } else {
+    //             alert(num);
+    //         }
+    //     }
+    // }
+    //
+    // let func = test();
+    // func();
+    // func();
+    // func();
+    // func();
+    // func();
+    // func();
+    // func();
+    // func();
+    // func();
+    // func();
+    // func();
+    // func();
+
+
+    // (function () {
+    //     return function() {
+    //         return function() {
+    //             return alert('!');
+    //         }
+    //     }
+    // })()()();
+
+
+    // (function (num1) {
+    //     return function (num2) {
+    //         return alert(num1 + num2);
+    //     }
+    // })(1)(2);
+
+
+    // (function (num1) {
+    //     return function (num2) {
+    //         return function (num3) {
+    //             return alert(num1 + num2 + num3);
+    //         }
+    //     }
+    // })(1)(2)(3);
+
+
+    // let func = (function () {
+    //     let num = 1;
+    //     return function () {
+    //         if (num === 5) {
+    //             alert(num);
+    //             num = 0;
+    //         } else {
+    //             alert(num);
+    //         }
+    //         num++;
+    //     }
+    // })();
+    // func();
+    // func();
+    // func();
+    // func();
+    // func();
+    // func();
+    // func();
+
+
+    // let arr = ['fino', 'alla', 'fine'];
+    //
+    // function reverse(elem) {
+    //     return elem.split('').reverse().join('');
+    // }
+    //
+    // function each(arr, callback) {
+    //     let result = [];
+    //     for (let elem of arr) {
+    //         result.push(callback(elem));
+    //     }
+    //     return result;
+    // }
+    //
+    // let result = each(arr, reverse);
+    // console.log(result);
+
+
+    // let arr = ['fino', 'alla', 'fine'];
+    //
+    // function each(arr, callback) {
+    //     let result = [];
+    //     for (let elem of arr) {
+    //         result.push(callback(elem));
+    //     }
+    //     return result;
+    // }
+    //
+    // let result = each(arr, function (elem) {
+    //     return elem.slice(0, 1).toUpperCase() + elem.slice(1);
+    // });
+    // console.log(result);
+
+    // let arr = [1, 2, 3, 4, 5, 6];
+    //
+    // function each(arr, callback) {
+    //     let result = [];
+    //     let i = 0;
+    //     for (let elem of arr) {
+    //         result.push(callback(elem, i++));
+    //     }
+    //     return result;
+    // }
+    //
+    // let result = each(arr, function (elem, index) {
+    //     return elem * index;
+    // });
+    // console.log(result);
+
+    // let arr = [1, 2, 3, 4, -5, 6, -7, 8];
+    //
+    // function filter(arr, callback) {
+    //     let result = [];
+    //     for (let elem of arr) {
+    //         if (callback(elem)) {
+    //             result.push(elem);
+    //         }
+    //     }
+    //     return result;
+    // }
+    //
+    // let result = filter(arr, function (elem) {
+    //     if (elem >= 0) {
+    //         return true;
+    //     } else {
+    //         return false;
+    //     }
+    // });
+    // console.log(result);
+
+    // let arr = ['fino', 'alla', 'fine', 'val'];
+    //
+    // function filter(arr, callback) {
+    //     let result = [];
+    //     for (let elem of arr) {
+    //         if (callback(elem)) {
+    //             result.push(elem);
+    //         }
+    //     }
+    //     return result;
+    // }
+    //
+    // let result = filter(arr, function (elem) {
+    //     if (elem.length >= 1 && elem.length <= 3) {
+    //         return true;
+    //     } else {
+    //         return false;
+    //     }
+    // });
+    // console.log(result);
+
+    // let arr = [1, 2, 3, 4, 5];
+    //
+    // function every(arr, callback) {
+    //     let flag = true;
+    //     for (let elem of arr) {
+    //         if (!callback(elem)) {
+    //             flag = false;
+    //             break;
+    //         }
+    //     }
+    //     return flag;
+    // }
+    //
+    // let result = every(arr, (elem) => elem > 0);
+    // console.log(result);
+
+    // let arr = [1, 2, 3, 4, -5];
+    // function some(arr, callback) {
+    //     let flag = false;
+    //     for (let elem of arr) {
+    //         if (callback(elem)) {
+    //             flag = true;
+    //             break;
+    //         }
+    //     }
+    //     return flag;
+    // }
+    //
+    // let result = some(arr, function (elem) {
+    //     return elem < 0;
+    // });
+    // console.log(result);
+
+    // let arr = ['a', 'b', 'c', 'd', 'e'];
+    //
+    // function alternate(arr, callback1, callback2) {
+    //     let result = [];
+    //     for (let i = 0; i < arr.length; i++) {
+    //         if ((i + 1) % 2 !== 0) {
+    //             result.push(callback1(arr[i]));
+    //         } else {
+    //             result.push(callback2(arr[i]));
+    //         }
+    //     }
+    //     return result;
+    // }
+    //
+    // let result = alternate(arr, function (elem) {
+    //         return elem + '!';
+    //     },
+    //     function (elem) {
+    //         return elem + '?';
+    //     });
+    // console.log(result);
+
+    // arrow function
+    // let result = every([1, 2, 3, 4, 5], (elem, index) => elem * index > 10);
+
+    //arrow function
+    // let result = each(arr, (elem, index) => elem * index > 10);
+</script>
+</body>
+</html>
