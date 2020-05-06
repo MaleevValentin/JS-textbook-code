@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recursion</title>
+</head>
+<body>
+<script>
+    // let i = 1;
+    //
+    // function func() {
+    //     console.log(i);
+    //     i++;
+    //     if (i <= 10) {
+    //         func(); // здесь функция вызывает сама себя
+    //     }
+    // }
+    //
+    // func();
+
+    // function func(arr) {
+    //     console.log(arr.shift(), arr);
+    //     if (arr.length !== 0) {
+    //         func(arr);
+    //     }
+    // }
+    //
+    // func([1, 2, 3]);
+
+    // function getSum(arr) {
+    //     let sum = arr.shift();
+    //     if (arr.length !== 0) {
+    //         sum += getSum(arr);
+    //     }
+    //     return sum;
+    // }
+    //
+    // console.log(getSum([1, 2, 3, 4]));
+
+    // let prevPrevNum  = 1;
+    // let prevNum = 2;
+    // let i = 3;
+    // console.log(prevPrevNum);
+    // console.log(prevNum);
+    //
+    // function func(prevPrevNum, prevNum) {
+    //     let current = prevPrevNum + prevNum;
+    //     console.log(current);
+    //     if (i < 10) {
+    //         prevPrevNum = prevNum;
+    //         prevNum = current;
+    //         i++;
+    //         func(prevPrevNum, prevNum);
+    //     }
+    //
+    // }
+    //
+    // func(1, 2);
+
+    // let arr = [1, 2];
+    // function func(prevPrevNum, prevNum) {
+    //     let current = prevPrevNum + prevNum;
+    //     arr.push(current);
+    //     if (arr.length < 10) {
+    //         prevPrevNum = prevNum;
+    //         prevNum = current;
+    //         func(prevPrevNum, prevNum);
+    //     }
+    //     return arr;
+    // }
+    //
+    // console.log(func(1, 2));
+
+    // function getDigitsSum(num) {
+    //     return getSum(getDigits(num));
+    // }
+    //
+    // function getSum(arr) {
+    //     let sum = 0;
+    //     for (let elem of arr) {
+    //         sum += +elem;
+    //     }
+    //     return sum;
+    // }
+    //
+    // function getDigits(num) {
+    //     return String(num).split('');
+    // }
+    //
+    // function reduceNum(num) {
+    //     let sum = getDigitsSum(num);
+    //     if (sum <= 9) {
+    //         return sum;
+    //     } else {
+    //         return reduceNum(sum);
+    //     }
+    // }
+    // console.log(reduceNum(2187));
+
+    // function func(arr) {
+    //     for (let elem of arr) {
+    //         if (typeof elem === 'object') {
+    //             func(elem);
+    //         } else {
+    //             console.log(elem);
+    //         }
+    //     }
+    // }
+    //
+    // func([1, [2, 7, 8], [3, 4, [5, [6, 7]]]]);
+
+
+    // let obj = {
+    //     a: 1, b: {c: 2, d: 3, e: 4}, f: {
+    //         g: 5,
+    //         j: 6, k: {l: 7, m: {n: 8, o: 9}}
+    //     }
+    // };
+    //
+    // function func(obj) {
+    //     for (let key in obj) {
+    //         if (typeof obj[key] !== 'object') {
+    //             console.log(obj[key]);
+    //         } else {
+    //             func(obj[key]);
+    //         }
+    //     }
+    // }
+    //
+    // func(obj);
+
+    // function func(arr) {
+    //     let sum = 0;
+    //     for (let elem of arr) {
+    //         if (typeof elem === 'object') {
+    //             sum += func(elem);
+    //         } else {
+    //             sum += elem;
+    //         }
+    //     }
+    //     return sum;
+    // }
+    // console.log(func([1, [2, 7, 8], [3, 4, [5, [6, 7]]]]));
+
+    // let obj = {
+    //     a: 1, b: {c: 2, d: 3, e: 4}, f: {
+    //         g: 5,
+    //         j: 6, k: {l: 7, m: {n: 8, o: 9}}
+    //     }
+    // };
+    //
+    // function func(obj) {
+    //     let sum = 0;
+    //     for (let key in obj) {
+    //         if (typeof obj[key] === 'object') {
+    //             sum += func(obj[key]);
+    //         } else {
+    //             sum += obj[key];
+    //         }
+    //     }
+    //     return sum;
+    // }
+    //
+    // console.log(func(obj));
+
+    // let arr = ['a', ['b', 'c', 'd'], ['e', 'f', ['g', ['j', 'k']]]];
+    // function func(arr) {
+    //     let str = '';
+    //     for (let elem of arr) {
+    //         if (typeof elem !== 'object') {
+    //             str += elem;
+    //         } else {
+    //             str += func(elem);
+    //         }
+    //     }
+    //     return str;
+    // }
+    //
+    // console.log(func(arr));
+
+    // function func(arr) {
+    //     for (let i = 0; i < arr.length; i++) {
+    //         if (typeof arr[i] === 'object') {
+    //             arr[i] = func(arr[i]);
+    //         } else {
+    //             arr[i] += '!';
+    //         }
+    //     }
+    //     return arr;
+    // }
+    //
+    // console.log(func([1, [2, 7, 8], [3, 4, [5, 6]]]));
+
+    // let arr = [1, [2, 7, 8], [3, 4], [5, [6, 7]]];
+    // function func(arr) {
+    //     for (let i = 0; i < arr.length; i++) {
+    //         if (typeof arr[i] === 'object') {
+    //             arr[i] = func(arr[i]);
+    //         } else {
+    //             arr[i] *= arr[i];
+    //         }
+    //     }
+    //     return arr;
+    // }
+    // console.log(func(arr));
+
+    let arr = [1, [2, 7, 8], [3, 4, [5, [6, 7]]]];
+    let result = [];
+
+    function func(arr) {
+        for (let i = 0; i < arr.length; i++) {
+            if (typeof arr[i] !== 'object') {
+                result.push(arr[i]);
+            } else {
+                arr[i] = func(arr[i]);
+            }
+        }
+        return result;
+    }
+    console.log(func(arr));
+
+
+</script>
+</body>
+</html>
