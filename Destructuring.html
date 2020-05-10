@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let arr = [2025, 12, 31];
+    // let [year, month, day] = arr;
+    // console.log(year);
+    // console.log(month);
+    // console.log(day);
+
+    // let arr = ['Иван', 'Иванов', 'отдел разработки', 'программист', 2000];
+    // let [name, surname, department, position, salary] = arr;
+    // console.log(name);
+
+    // function func() {
+    //     return ['Иван', 'Иванов', 'отдел разработки', 'программист', 2000];
+    // }
+    //
+    // let [name, surname, department, position, salary] = func();
+    // console.log(salary);
+
+    // let arr = ['Иван', 'Иванов', 'отдел разработки', 'программист', 2000];
+    // let [, , department, position, ,] = arr;
+    // console.log(department);
+    // console.log(position);
+
+    // let arr = ['Иван', 'Иванов', 'отдел разработки', 'программист', 2000];
+    // let [name, surname, ...info] = arr;
+    // console.log(name);
+    // console.log(surname);
+    // console.log(info);
+
+    // let arr = ['Иван', 'Иванов', 'отдел разработки', 'программист', 2000];
+    // let [name, surname, department, position = 'джуниор'] = arr;
+    // console.log(position);
+
+    // function funcYear() {
+    //     return (new Date).getFullYear();
+    // }
+    //
+    // function funcMonth() {
+    //     return (new Date).getMonth();
+    // }
+    //
+    // function funcDate() {
+    //     return (new Date).getDate();
+    // }
+    //
+    // let arr = [];
+    // let [year = funcYear(), month = funcMonth(), day = funcDate()] = arr;
+    // console.log(year);
+    // console.log(month);
+    // console.log(day);
+
+    // let obj = {
+    //     year: 2025,
+    //     month: 5,
+    //     day: 9
+    // };
+    // let {year, month, day} = obj;
+    // console.log(year);
+
+    // let options = {
+    //     color: 'red',
+    //     width: 400,
+    //     height: 500
+    // };
+    //
+    // let {color, width, height} = options;
+    // console.log(color);
+
+    // let options = {
+    //     color: 'red',
+    //     width: 400,
+    //     height: 500
+    // };
+    // let {color: c, width: w, height: h} = options;
+    // console.log(c, w, h);
+
+    // let obj = {
+    //     month: 12,
+    //     day:   31,
+    // };
+    //
+    // let {year = 2025, month, day} = obj;
+    //
+    // console.log(year);  // выведет 2025
+    // console.log(month); // выведет 1
+    // console.log(day);
+
+    // let options = {
+    //     width: 400,
+    //     height: 500
+    // };
+    // let {color = 'black', width, height} = options;
+    // console.log(color, width, height);
+
+    // let obj = {
+    //     month: 12,
+    //     day: 5
+    // };
+    // let {year: y = 2020, month, day} = obj;
+    // console.log(y, month, day);
+
+    // let options = {
+    //     width: 400,
+    //     height: 500
+    // };
+    // let {color: c = 'black', width: w, height: h} = options;
+    // console.log(c, w, h);
+
+    // function func([name, surname, department, position, salary]) {
+    //     console.log(name);
+    //     console.log(surname);
+    //     console.log(department);
+    //     console.log(position);
+    //     console.log(salary);
+    // }
+    //
+    // func(['Иван', 'Иванов', 'отдел разработки', 'программист', 2000]);
+
+    // function func([name, surname, ...info]) {
+    //     console.log(name);
+    //     console.log(surname);
+    //     console.log(info);
+    // }
+    //
+    // func(['Иван', 'Иванов', 'отдел разработки', 'программист', 2000]);
+
+    // function func([name, surname, department, position = 'джуниор']) {
+    //     console.log(name);
+    //     console.log(surname);
+    //     console.log(department);
+    //     console.log(position);
+    // }
+    //
+    // func(['Иван', 'Иванов', 'отдел разработки']);
+
+    // function func(department, [name, surname], [year, month, day]) {
+    //     console.log(department);
+    //     console.log(name);
+    //     console.log(surname);
+    //     console.log(year);
+    //     console.log(month);
+    //     console.log(day);
+    // }
+    //
+    // func('отдел разработки', ['Иван', 'Иванов'], ['2018', '12', '31']);
+
+    // function func({color, width, height}) {
+    //     console.log(color);
+    //     console.log(width);
+    //     console.log(height);
+    // }
+    //
+    // func({color: 'red', width: 400, height: 500});
+
+    function func({color = 'black', width, height}) {
+        console.log(color);
+        console.log(width);
+        console.log(height);
+    }
+
+    func({width: 400, height: 500});
+</script>
+</body>
+</html>
