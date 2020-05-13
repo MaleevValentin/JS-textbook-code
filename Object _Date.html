@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date</title>
+</head>
+<body>
+<script>
+    // let date = new Date();
+
+    /*function addZero(num) {
+        if (num >= 0 && num <= 9) {
+            return '0' + num;
+        } else {
+            return num;
+        }
+    }*/
+
+    /*function isWeekend(num) {
+        return num === 0 || num === 6;
+    }
+*/
+    // let date = new Date();
+    // console.log(date.getDate());
+    // console.log(date.getMonth());
+    // console.log(date.getFullYear());
+
+    // let date = new Date();
+    // console.log(date.getFullYear() + '-' + addZero(date.getMonth() + 1) + '-' + date.getDate());
+
+    // let date = new Date();
+    // console.log(addZero(
+    //     date.getHours()) + ':' + addZero(
+    //     date.getMinutes()) + ':' + addZero(
+    //     date.getSeconds()) + ' ' + addZero(
+    //     date.getDate()) + '.' +
+    //     addZero(date.getMonth() + 1) + '.' + date.getFullYear());
+
+    // let str = '2025-12-31';
+    // let result = str.split('-').reverse().join('/');
+    // console.log(result);
+
+    // let str = '2020-05-10';
+    // let result = str.split('-').reverse().join('.');
+    // console.log(result);
+
+    // let date = new Date();
+    // console.log(isWeekend(date.getDay()));
+
+    // let date = new Date();
+    // function daysToSunday(num, sunday = 7) {
+    //     return sunday - num;
+    // }
+    //
+    // console.log(daysToSunday(date.getDay()));
+
+    // let date = new Date();
+    // let day = date.getDay();
+    // let days = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+    // console.log(days[day]);
+
+    // let date = new Date();
+    // let months = [
+    //     'янв', 'фев', 'мар', 'апр', 'май', 'июн',
+    //     'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'
+    // ];
+    // let month = date.getMonth();
+    // console.log(months[month]);
+
+    // let date = new Date(2019, 4, 1);
+    // let day = date.getDay();
+    // let days = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+    // console.log(days[day]);
+
+    // let date = new Date(2025, 0, 1);
+    // console.log(date.getTime());
+
+    // let jan = new Date(2000, 0, 10);
+    // let march = new Date(1988, 2, 1);
+    // let diff = jan.getTime() - march.getTime();
+    // console.log(diff / (1000 * 60 * 60 * 24));
+
+    // let day = new Date(1989, 1, 19);
+    // let now = new Date();
+    // let diff = now.getTime() - day.getTime();
+    // console.log(diff / (1000 * 60 * 60 * 24 * 30));
+
+    // let date1 = new Date(2000, 8, 1);
+    // let date2 = new Date(2010, 1, 15);
+    // let diff = date2 - date1;
+    // console.log(diff / (1000 * 60 * 60 * 24));
+    // console.log(diff / (1000 * 60 * 60 * 24 * 30));
+    // console.log(diff / (1000 * 60 * 60 * 24 * 30 * 12));
+
+    // let date = new Date(2018, 0, 1, 100, 100, 100);
+    // console.log(date);
+
+    // function getLastDay(year, month) {
+    //     let lastDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    //     if (month !== 1) {
+    //         return lastDays[month];
+    //     } else {
+    //         let date = new Date(year, month + 1, 0);
+    //         return date.getDate();
+    //     }
+    // }
+    // console.log(getLastDay(2020, 1));
+
+    // function getDay(year, month, num) {
+    //     let date = new Date(year, month, num);
+    //     let day = date.getDay();
+    //     let days = ['вс', 'пн', 'вт', 'ср', 'чт', 'пн', 'сб'];
+    //     return days[day];
+    // }
+    // console.log(getDay(2025, 5, 0));
+
+    // let date = new Date(2020, 2, 0);
+    // if (date.getDate() === 29) {
+    //     console.log('высокосный');
+    // } else {
+    //     console.log('обычный');
+    // }
+
+    // function isLeap(year) {
+    //     let date = new Date(year, 2, 0);
+    //     return date.getDate() === 29;
+    // }
+    //
+    // console.log(isLeap(2024));
+
+    // function checkDate(year, month, day) {
+    //     let date = new Date(year, month, day);
+    //     return date.getFullYear() === year && date.getMonth() === month && date.getDate() === day;
+    // }
+    //
+    // console.log(checkDate(2025, 0, 31)); // выведет true
+    // console.log(checkDate(2025, 0, 32))
+
+    // let now = new Date();
+    // let date = new Date(now.getFullYear(), 2, 8);
+    // console.log(date.getDay());
+
+    // let now = new Date();
+    // let date = new Date(now.getFullYear(), 11, 31);
+    // console.log(date.getDay());
+
+    // let now = new Date();
+    // let date = new Date(now.getFullYear(), now.getMonth(), 1);
+    // console.log(date.getDay());
+
+    // let now = new Date();
+    // let date = new Date(now.getFullYear() + 1, 11, 31);
+    // console.log(date.getDay());
+
+    // let now = new Date();
+    // let date = new Date(now.getFullYear() + 1, now.getMonth(), 12);
+    // console.log(date.getDay());
+
+    // let now = new Date();
+    // let date = new Date(now.getFullYear() - 1, now.getMonth(), 12);
+    // console.log(date.getDay());
+
+    // let now = new Date();
+    // let date = new Date(now.getFullYear(), now.getMonth() - 1, 12);
+    // console.log(date.getDay());
+
+    // let now = new Date(2020, 0, 12);
+    // let date = new Date(now.getFullYear(), now.getMonth() - 1, 12);
+    // console.log(date.getDay());
+
+    // let date1 = new Date(2020, 0, 1);
+    // let date2 = new Date(2020, 8, 10);
+    // let diff = date2 - date1;
+    // console.log(diff / (1000 * 60 * 60 * 24));
+
+    // let date = new Date();
+    // let date1 = new Date(date.getFullYear(), date.getMonth(), 20);
+    // let date2 = new Date(date.getFullYear(), date.getMonth() + 1, 10);
+    // let diff = date2 - date1;
+    // console.log(diff / (1000 * 60 * 60 * 24));
+
+    // let now = new Date();
+    // let date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1, 12);
+    // let diff = now - date;
+    // console.log(diff / (1000 * 60 * 60));
+
+    // let now = new Date();
+    // let date = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    // let diff = now - date;
+    // console.log(diff / (1000 * 60 * 60));
+
+    // let now = new Date();
+    // let date = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 24);
+    // let diff = date - now;
+    // console.log(diff / (1000 * 60 * 60));
+
+    // let now = new Date();
+    // let year = now.getFullYear();
+    // for (let month = 0; month <= 11; month++) {
+    //     let date = new Date(year, month, 1);
+    //     if (date.getDay() === 0) {
+    //         console.log(year + '-' + month + '-1');
+    //     }
+    // }
+
+    /* let now = new Date();
+     let i = 0;
+     for (let year = 2000; year <= now.getFullYear(); year++) {
+         let date = new Date(year, 0, 1);
+         if (date.getDay() === 0 || date.getDay() === 6) {
+             console.log(year);
+             i++;
+         }
+     }
+     console.log(i);*/
+
+    /*let now = new Date();
+    let date = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    let diff = now - date;
+    console.log(diff / 1000);*/
+
+    /*let now = new Date();
+    let date = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59);
+    let diff = date - now;
+    console.log(diff / 1000);*/
+
+    /*let now = new Date();
+    let date = new Date(now.getFullYear() + 1, 0, 1);
+    let diff = date - now;
+    console.log(diff / (1000 * 60 * 60 * 24));*/
+
+    /*let now = new Date();
+    let year = now.getFullYear();
+    let i = 0;
+    for (let month = 0; month <= 11; month++) {
+        let date = new Date(year, month, 13);
+        if (date.getDay() === 5) {
+            i++;
+        }
+    }
+    console.log('Пятниц 13-е в текущем году: ' + i);*/
+
+    /*let now = new Date();
+    let date = new Date(now.getFullYear(), now.getMonth() - 3, now.getDate());
+    console.log(date.getFullYear());*/
+
+    /*let now = new Date();
+    let date = new Date(now.getFullYear(), now.getMonth() + 1, 0);
+    console.log(date.getDay());*/
+
+    /*let now = new Date();
+    let date = new Date(now.getFullYear(), now.getMonth() + 1, 1);
+    let diff = date - now;
+    console.log(diff / (1000 * 60 * 60 * 24));*/
+
+    /*function isLeap(year) {
+        let date = new Date(year, 2, 0);
+        return date.getDate() === 29;
+    }
+    console.log(isLeap(2020));*/
+
+    /*let now = new Date();
+    let date = new Date(now.getFullYear(), 2, 0);
+    if (date.getDate() === 29) {
+        console.log(date.getFullYear() + ' Высокосный год');
+    } else {
+        console.log(date.getFullYear() + ' Не высокосный год');
+    }*/
+
+    /*let now = new Date(2029, 0, 1);
+    let date = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    for (let year = date.getFullYear(); year >= 2000; year--) {
+        if (year % 4 === 0) {
+            console.log(year + ' Высокосный год');
+            console.log((year - 4) + ' Предыдущий высокосный год');
+            break;
+        }
+    }*/
+
+    /*let now = new Date();
+    let future = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    for (let year = future.getFullYear(); year >= future.getFullYear(); year++) {
+        if (year % 4 === 0) {
+            console.log((year + 4) + ' Следующий высокосный год');
+            break;
+        }
+    }*/
+
+    /*let date1 = '2020-11-31';
+    let date2 = '2020-12-01';
+    if (date1 < date2) {
+        console.log('2020-12-01 больше чем 2020-11-31');
+    } else {
+        console.log('2020-11-31 больше чем 2020-12-01');
+    }*/
+
+    /*let date1 = '11-01';
+    let date2 = '12-01';
+    if (date1 < date2) {
+        console.log('12-01 больше чем 11-01');
+    } else {
+        console.log('2020-11-31 больше чем 2020-12-01');
+    }*/
+
+    /*let date = '20-08';
+
+    if (date >= '01-01' && date <= '08-03') {
+        console.log('1 промежуток');
+    }
+
+    if (date >= '09-03' && date <= '17-06') {
+        console.log('2 промежуток');
+    }
+
+    if (date >= '18-06' && date <= '31-12') {
+        console.log('3 промежуток');
+    }*/
+
+    /*let date = new Date();
+    let date1 = new Date(date.getFullYear(), date.getMonth(), date.getDate(), 12);
+    console.log(date > date1);*/
+
+    /*let date = new Date();
+    let date1 = new Date(date.getFullYear(), date.getMonth(), 15);
+    console.log(date > date1);*/
+
+    /*let now = new Date();
+    let date = new Date(now.getFullYear(), 2, 8);
+    let diff = date - now;
+    if (diff > 0) {
+        console.log('8 марта через ' + Math.round(diff / (1000 * 60 * 60 * 24)) + ' дней');
+    } else if (diff === 0) {
+        console.log('Сегодня 8 марта');
+    } else {
+        let futureDate = new Date(now.getFullYear() + 1, 2, 8);
+        diff = futureDate - now;
+        console.log('8 марта в следующем году через ' + Math.round(diff / (1000 * 60 * 60 * 24)) + ' дней');
+    }*/
+
+    /*let now = new Date();
+    let date = new Date(now.getFullYear(), 1, 19);
+    let diff = date - now;
+    if (diff > 0) {
+        console.log('До дня рождения осталось ' + Math.round(diff / (1000 * 60 * 60 * 24)) + ' дней');
+    } else if (diff === 0) {
+        console.log('Сегодня День Рождения!!!!');
+    } else {
+        date = new Date(now.getFullYear() + 1, 1, 19);
+        diff = date - now;
+        console.log('День Рождения в следующем году. Осталось ' +
+            Math.round(diff / (1000 * 60 * 60 * 24)) + ' дней');
+    }*/
+
+    function daysBirthday(month, day) {
+        let now = new Date();
+        let date = new Date(now.getFullYear(), month, day);
+        let diff = date - now;
+        if (diff > 0) {
+            return 'До дня рождения осталось ' + Math.round(diff / (1000 * 60 * 60 * 24)) + ' дней';
+        } else if (diff === 0) {
+            return 'Сегодня День Рождения!!!!';
+        } else if (month === 1 && day === 29) {
+            date = new Date(now.getFullYear() + 1, 2, 1);
+            diff = date - now;
+            return 'День Рождения в следующем году. Осталось ' +
+                Math.round(diff / (1000 * 60 * 60 * 24)) + ' дней.';
+        } else {
+            date = new Date(now.getFullYear() + 1, month, day);
+            diff = date - now;
+            return 'День Рождения в следующем году. Осталось ' +
+                Math.round(diff / (1000 * 60 * 60 * 24)) + ' дней.';
+        }
+    }
+
+    console.log(daysBirthday(1, 29));
+</script>
+</body>
+</html>
