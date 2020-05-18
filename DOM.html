@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<!--<input type="submit" id="button">-->
+
+<!--<p id="elem1">1</p>
+<p id="elem2">2</p>
+<p id="elem3">3</p>-->
+
+<!--<div id="parent">
+    <input class="elem">
+    <input class="elem">
+</div>-->
+
+<!-- <div class="block">
+     <p>1</p>
+     <p>2</p>
+ </div>-->
+
+<!--<p class="www">text</p>
+<p class="www">text</p>-->
+
+<!--<input id="button1" type="submit">
+<input id="button2" type="submit">
+<input id="button3" type="submit">-->
+
+<!--<input id="button1" type="submit" value="button1">
+<input id="button2" type="submit" value="button2">-->
+
+<!--<p id="elem1">text</p>
+<p id="elem2">text</p>
+<p id="elem3">text</p>
+<p id="elem4">text</p>
+<p id="elem5">text</p>-->
+
+<!--<p id="elem1">gfdg</p>
+<p id="elem2">dsfgfds</p>
+<p id="elem3">13543</p>
+<input type="submit" id="button1">
+<input type="submit" id="button2">-->
+
+<!--<p id="elem">text</p>
+<input type="submit" id="button">-->
+
+<!--<input id="elem" type="email">
+<input type="submit" id="button">-->
+
+<!--<a href="https://jufc.ru" id="link">Juventus.ru</a>
+<input type="submit" id="button">-->
+
+<!--<img src="" alt="" id="img">
+<input type="submit" id="button1">
+<input type="submit" id="button2">-->
+
+<!--<input value="" id="elem1">
+<input value="" id="elem2">
+<input value="" id="elem3">
+<input value="" id="elem4">
+<input value="" id="elem5">
+<p id="result"></p>
+<input type="submit" id="button">-->
+
+<!--<input type="text" value="text" id="elem">-->
+
+<!--<div id="elem" class="aaa bbb ccc"></div>
+<input type="submit" id="button">-->
+
+<!--<img id="image" src="https://football.ua/tpl/football/img/header/logo.png">-->
+
+<!--<input type="text" id="elem1" value="2">
+<input type="text" id="elem2" value="3">
+<input type="text" id="elem3" value="4">-->
+
+<!--<p class="elem">Fino</p>
+<p class="elem">Alla</p>
+<p class="elem">Fine</p>
+<p class="elem">Forza</p>
+<p class="elem">Juve</p>
+<input type="submit" id="button">-->
+
+<!--<input type="text" class="num" value="5">
+<input type="text" class="num" value="5">
+<input type="text" class="num" value="5">
+<input type="text" class="num" value="5">-->
+
+<!--<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>-->
+
+<!--<a href="https://juventus.com" id="link" target="_blank">juventus.com</a>-->
+
+<!--<p>text</p>
+<p>text</p>
+<p>text</p>
+<p>text</p>
+<p>text</p>-->
+
+<!--<input type="text" value="text" id="elem">-->
+
+<!--<input id="elem" class="www zzz">-->
+
+<!--<input id="elem" value="start">
+<input type="submit" id="button">-->
+
+<!--<p id="elem" class="www ggg zzz"></p>-->
+
+<!--<div id="elem">Forza Juve!!!!</div>
+<input type="submit" id="button">-->
+
+<!--<ul class="list">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+<input type="submit" id="button">-->
+
+<!--<p>Juventus</p>
+<input type="submit" id="button1" value="перечеркнуть">
+<input type="submit" id="button2" value="сделать жирным">
+<input type="submit" id="button3" value="сделать красным">-->
+
+<!--<input type="text" id="text" value="text">
+<p class="elem">Some text</p>-->
+
+<!--<input type="text" class="text">
+<input type="text" class="text">
+<input type="text" class="text">
+<p class="elem"></p>
+<input type="submit" id="button">-->
+
+<!--<input type="text" class="num">-->
+
+<!--<input type="text" class="num">-->
+
+<!--<input type="text" id="fullName">
+<input type="text" class="name1">
+<input type="text" class="name2">
+<input type="text" class="name3">-->
+
+<!--<input type="text" id="fullName">-->
+<script>
+    /*let button = document.querySelector('#button');
+    console.log(button);*/
+
+    /*let p1 = document.querySelector('#elem1');
+    let p2 = document.querySelector('#elem2');
+    let p3 = document.querySelector('#elem3');
+    console.log(p1, p2, p3);*/
+
+    /*let elem = document.querySelector('.elem');
+    console.log(elem);*/
+
+    /*let elem = document.querySelector('#block p');
+    console.log(elem);*/
+
+    /*let elem = document.querySelector('.block p');
+    console.log(elem);*/
+
+    /*let elem = document.querySelector('.www');
+    console.log(elem);*/
+
+    /*let button1 = document.querySelector('#button1');
+    button1.addEventListener('click', function () {
+        alert(1);
+    });
+    button1.addEventListener('dblclick', function () {
+        alert(2);
+    });
+
+    let button2 = document.querySelector('#button2');
+    button2.addEventListener('mouseover', function () {
+        alert('Навел на меня');
+    });
+
+    button2.addEventListener('mouseout', function () {
+        alert('Ушел от меня');
+    });
+
+    let button3 = document.querySelector('#button3');
+    button3.addEventListener('mouseout', function () {
+        alert('Ушел от меня');
+    });*/
+
+
+    /*   function func1() {
+           alert(1);
+       }
+
+       function func2() {
+           alert(2);
+       }
+
+       let button1 = document.querySelector('#button1');
+       button1.addEventListener('click', func1);
+
+       let button2 = document.querySelector('#button2');
+       button2.addEventListener('click', func2);*/
+
+    /*function func() {
+        alert('message');
+    }
+
+    let elem1 = document.querySelector('#elem1');
+    let elem2 = document.querySelector('#elem2');
+    let elem3 = document.querySelector('#elem3');
+    let elem4 = document.querySelector('#elem4');
+    let elem5 = document.querySelector('#elem5');
+    elem1.addEventListener('click', func);
+    elem2.addEventListener('click', func);
+    elem3.addEventListener('click', func);
+    elem4.addEventListener('click', func);
+    elem5.addEventListener('click', func);*/
+
+
+    /*function func1() {
+        alert(1);
+    }
+
+    function func2() {
+        alert(2);
+    }
+
+    function func3() {
+        alert(3);
+    }
+
+    let button = document.querySelector('#button');
+    button.addEventListener('dblclick', func1);
+    button.addEventListener('dblclick', func2);
+    button.addEventListener('dblclick', func3);*/
+
+
+    /*let button = document.querySelector('#button');
+    let elem1 = document.querySelector('#elem1');
+    let elem2 = document.querySelector('#elem2');
+    button.addEventListener('click', function () {
+        alert(Number(elem1.innerHTML) + Number(elem2.innerHTML));
+    });*/
+
+    /*let elem1 = document.querySelector('#elem1');
+    let elem2 = document.querySelector('#elem2');
+    let button1 = document.querySelector('#button1');
+    let button2 = document.querySelector('#button2');
+    button1.addEventListener('click', function () {
+        alert(elem1.innerHTML);
+    });
+    button2.addEventListener('click', function () {
+        alert(elem2.innerHTML);
+    });*/
+
+    /*let elem1 = document.querySelector('#elem1');
+    let button1 = document.querySelector('#button1');
+    let button2 = document.querySelector('#button2');
+    button1.addEventListener('click', function () {
+        elem1.innerHTML = 'Привет';
+    });
+    button2.addEventListener('click', function () {
+        elem1.innerHTML = 'Пока';
+    });*/
+
+    /* let elem1 = document.querySelector('#elem1');
+     let elem2 = document.querySelector('#elem2');
+     let elem3 = document.querySelector('#elem3');
+     elem1.addEventListener('click', function () {
+         elem1.innerHTML += '1';
+     });
+     elem2.addEventListener('click', function () {
+         elem2.innerHTML += '2';
+     });
+     elem3.addEventListener('click', function () {
+         elem3.innerHTML += '3';
+     });*/
+
+    /*let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        let num = elem.innerHTML * elem.innerHTML;
+        elem.innerHTML = String(num);
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        let num = Number(elem.innerHTML) + 1;
+        elem.innerHTML = String(num);
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        elem.innerHTML += '!';
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        elem.innerHTML = '!' + elem.innerHTML;
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        elem.innerHTML = '<i>hello</i>';
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        alert(elem.type);
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+       elem.type = 'submit';
+    });*/
+
+    /*let button = document.querySelector('#button');
+    let link = document.querySelector('#link');
+    let paragraph = document.querySelector('#paragraph');
+    button.addEventListener('click', function () {
+        paragraph.innerHTML = link.href;
+    });*/
+
+    /*let button = document.querySelector('#button');
+    let link = document.querySelector('#link');
+    button.addEventListener('click', function () {
+        link.innerHTML += '(' + link.href + ')';
+    });*/
+
+    /*let button = document.querySelector('#button');
+    let img = document.querySelector('#img');
+    let paragraph = document.querySelector('#paragraph');
+    button.addEventListener('click', function () {
+        paragraph.innerHTML = img.src;
+    });*/
+
+    /*let button = document.querySelector('#button');
+    let img = document.querySelector('#img');
+    button.addEventListener('click', function () {
+        img.width = '300';
+    });*/
+
+    /*let button = document.querySelector('#button');
+    let img = document.querySelector('#img');
+    button.addEventListener('click', function () {
+        img.width *= 2;
+    });*/
+
+    /*let button1 = document.querySelector('#button1');
+    let button2 = document.querySelector('#button2');
+    let img = document.querySelector('#img');
+    button1.addEventListener('click', function () {
+        img.src = 'https://jufc.ru/_assets2/images/logo2018v2.png';
+    });
+    button2.addEventListener('click', function () {
+        img.src = 'https://football.ua/tpl/football/img/header/logo.png';
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        alert(elem.value);
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        elem.value = 'juventus';
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let paragraph = document.querySelector('#paragraph');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        paragraph.innerHTML = elem.value;
+    });*/
+
+    /*let elem1 = document.querySelector('#elem1');
+    let elem2 = document.querySelector('#elem2');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        elem2.value = elem1.value * elem1.value;
+    });*/
+
+    /*let elem1 = document.querySelector('#elem1');
+    let elem2 = document.querySelector('#elem2');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        let value1 = elem1.value;
+        elem1.value = elem2.value;
+        elem2.value = value1;
+    });*/
+
+    /*let elem1 = document.querySelector('#elem1');
+    let elem2 = document.querySelector('#elem2');
+    let elem3 = document.querySelector('#elem3');
+    let elem4 = document.querySelector('#elem4');
+    let elem5 = document.querySelector('#elem5');
+    let result = document.querySelector('#result');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        result.innerHTML = (+elem1.value + +elem2.value + +elem3.value + +elem4.value + +elem5.value) / 5;
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('focus', function () {
+        elem.value = 1;
+    });
+    elem.addEventListener('blur', function () {
+        elem.value = 2;
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('blur', function () {
+        elem.value *= elem.value;
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('focus', function () {
+        elem.value = '';
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        alert(elem.className);
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        elem.className = 'header';
+        console.log(elem.className);
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        let arr = elem.className.split(' ');
+        console.log(arr);
+    });*/
+
+    /*console.log(document.querySelector('#image').src);*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('blur', func);
+    function func() {
+        console.log(this.value);
+    }*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('focus', function () {
+        this.value = 1;
+    });
+    elem.addEventListener('blur', function () {
+        this.value = 2;
+    });*/
+
+    /*let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        this.value = +this.value + 1;
+    });*/
+
+    /*let elem1 = document.querySelector('#elem1');
+    let elem2 = document.querySelector('#elem2');
+    let elem3 = document.querySelector('#elem3');
+    let elem4 = document.querySelector('#elem4');
+    let elem5 = document.querySelector('#elem5');
+    elem1.addEventListener('click', func);
+    elem2.addEventListener('click', func);
+    elem3.addEventListener('click', func);
+    elem4.addEventListener('click', func);
+    elem5.addEventListener('click', func);
+
+    function func() {
+        this.innerHTML += '!';
+    }*/
+
+    /*let elem1 = document.querySelector('#elem1');
+    let elem2 = document.querySelector('#elem2');
+    let elem3 = document.querySelector('#elem3');
+
+    function func() {
+        this.value *= this.value;
+    }
+
+    elem1.addEventListener('blur', func);
+    elem2.addEventListener('blur', func);
+    elem3.addEventListener('blur', func);*/
+
+    /*let button = document.querySelector('#button');
+    let elem = document.querySelectorAll('.elem');
+    button.addEventListener('click', function () {
+        for (let elems of elem) {
+            elems.innerHTML = 'text';
+        }
+    });*/
+
+    /*let button = document.querySelector('#button');
+    let elem = document.querySelectorAll('.elem');
+    let i = 1;
+    button.addEventListener('click', function () {
+        for (let elems of elem) {
+            elems.innerHTML = elems.innerHTML + ' ' + i;
+            i++;
+        }
+    });*/
+
+    /*let button = document.querySelector('#button');
+    let num = document.querySelectorAll('.num');
+    let elem = document.querySelector('#elem');
+    button.addEventListener('click', function () {
+        let result = 0;
+        for (let nums of num) {
+            result += Number(nums.value);
+        }
+        elem.innerHTML = result;
+    });*/
+
+    /*let num = document.querySelectorAll('.num');
+
+    function func() {
+        this.value = Number(this.value) + 1;
+    }
+
+    for (let nums of num) {
+        nums.addEventListener('blur', func);
+    }*/
+
+    /*let elem = document.querySelectorAll('.elem');
+    for (let elems of elem) {
+        elems.addEventListener('click', func);
+    }
+
+    function func() {
+        this.innerHTML *= this.innerHTML;
+    }*/
+
+    /*let divs = document.querySelectorAll('div');
+    for (let div of divs) {
+        div.addEventListener('click', function () {
+            this.innerHTML++;
+        });
+    }*/
+
+    /*let link = document.querySelector('#link');
+    link.addEventListener('click', func);
+
+    function func() {
+        this.innerHTML += ' (' + this.href + ')';
+        this.removeEventListener('click', func);
+    }*/
+
+    /*let button = document.querySelector('#button');
+    button.addEventListener('click', func);
+
+    function func() {
+        this.value = Number(this.value) + 1;
+        if (Number(this.value) === 10) {
+            this.removeEventListener('click', func);
+        }
+    }*/
+
+    /*let elems = document.querySelectorAll('p');
+    for (let elem of elems) {
+        elem.addEventListener('click', func);
+    }
+
+    function func() {
+        this.innerHTML += '!';
+        this.removeEventListener('click', func);
+    }*/
+
+    /*let elems = document.querySelectorAll('p');
+    for (let elem of elems) {
+        elem.addEventListener('click', function func() {
+            this.innerHTML += '!';
+            this.removeEventListener('click', func);
+        });
+    }*/
+
+    /*let elem = document.querySelector('#elem');
+    console.log(elem.getAttribute('value'));*/
+
+    /*let elem = document.querySelector('#elem');
+    let value = elem.getAttribute('class');
+    console.log(value);*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.setAttribute('value', 'text');
+    elem.setAttribute('class', 'valid');*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.removeAttribute('value');*/
+
+    /*let elem = document.querySelector('#elem');
+    console.log(elem.hasAttribute('value'));*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.value = 'new'; // поменяли свойство
+    let value = elem.getAttribute('value');
+    console.log(value); // выведет 'old' - свойство не поменялось*/
+
+    /*let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        if (elem.getAttribute('value') === elem.value) {
+            alert('OK');
+        } else {
+            alert('Was changed');
+        }
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+       elem.value = elem.getAttribute('value');
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    console.log(elem.classList.length);*/
+
+    /*let elem = document.querySelector('#elem');
+    let classNames = elem.classList;
+    for (let className of classNames) {
+        console.log(className);
+    }*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.classList.add('xxx');
+    let classNames = elem.classList;
+    for (let className of classNames) {
+        document.write(className + '<br>');
+    }*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.classList.remove('www', 'zzz');
+    console.log(elem.classList.length);*/
+
+    /*let elem = document.querySelector('#elem');
+    let contains = elem.classList.contains('ggg');
+    console.log(contains);*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.classList.toggle('www');
+    console.log(elem.classList.length);*/
+
+    /*let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        elem.style.width = '400px';
+        elem.style.height = '100px';
+        elem.style.border = '4px solid green';
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        elem.style.fontSize = '20px';
+        elem.style.borderTop = '2px dotted black';
+        elem.style.backgroundColor = 'yellow';
+    });*/
+
+    /*let elems = document.querySelectorAll('li');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        for (let elem of elems) {
+            elem.style.cssFloat = 'left';
+        }
+    });*/
+
+    /* let elem = document.querySelector('p');
+     let button1 = document.querySelector('#button1');
+     let button2 = document.querySelector('#button2');
+     let button3 = document.querySelector('#button3');
+     button1.addEventListener('click', function () {
+         elem.classList.toggle('line-through');
+     });
+     button2.addEventListener('click', function () {
+         elem.classList.toggle('bold');
+     });
+     button3.addEventListener('click', function () {
+         elem.classList.toggle('colored');
+     });*/
+
+    /*let input = document.querySelector('#text');
+    let elem = document.querySelector('.elem');
+    input.addEventListener('blur', function () {
+        elem.innerHTML += ' ' + input.value;
+    })*/
+
+    /*let inputs = document.querySelectorAll('.text');
+    let elem = document.querySelector('.elem');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        let result = 0;
+        for (let input of inputs) {
+            result += Number(input.value);
+        }
+        elem.innerHTML = String(result);
+    });*/
+
+    /*let num = document.querySelector('.num');
+    num.addEventListener('blur', function () {
+        let result = 0;
+        let arr = num.value.split('');
+        for (let elem of arr) {
+            result += Number(elem);
+        }
+        alert(result);
+    });*/
+
+    /*let num = document.querySelector('.num');
+    num.addEventListener('blur', function () {
+        let result = 0;
+        let arr = num.value.split(',');
+        for (let elem of arr) {
+            result += Number(elem);
+        }
+        alert(result / arr.length);
+    });*/
+
+    /* let fullName = document.querySelector('#fullName');
+     let name1 = document.querySelector('.name1');
+     let name2 = document.querySelector('.name2');
+     let name3 = document.querySelector('.name3');
+     fullName.addEventListener('blur', function () {
+         let arr = fullName.value.split(' ');
+         name1.value = arr[0];
+         name2.value = arr[1];
+         name3.value = arr[2];
+     });*/
+
+  </script>
+</body>
+</html>

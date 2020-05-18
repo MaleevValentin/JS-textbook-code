@@ -1,0 +1,11 @@
+.bold {
+    font-weight: bold;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.colored {
+    color: red;
+}
