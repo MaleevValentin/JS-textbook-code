@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Getting items</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<!--<ul id="elem">
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+</ul>-->
+
+<!--<div>
+    <ul>
+        <li>text</li>
+        <li>text</li>
+        <li id="elem">text</li>
+        <li>text</li>
+        <li>text</li>
+    </ul>
+</div>-->
+
+<!--<header>
+    <div>
+        <p>
+            <span id="elem"></span>
+        </p>
+    </div>
+</header>-->
+
+<!--<header>
+    <div class="www">
+        <p class="www">
+            <span id="elem"></span>
+        </p>
+    </div>
+</header>-->
+
+<!--<ul>
+    <li>text</li>
+    <li>text</li>
+    <li id="elem">text</li>
+    <li>text</li>
+    <li>text</li>
+</ul>-->
+
+<!--<ul>
+    <li>text1</li>
+    <li>text2</li>
+    <li id="elem">text3</li>
+    <li>text4</li>
+    <li>text5</li>
+</ul>-->
+
+<!--<div id="elem"></div>-->
+
+<!--<ul>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+</ul>-->
+
+<!--<p class="www">elem 1</p>
+<p class="www">elem 2</p>
+<p class="www">elem 3</p>-->
+
+<div id="parent">
+    <p class="www">text</p>
+    <p class="www">text</p>
+    <p class="www">text</p>
+    <p class="ggg">text</p>
+    <p class="ggg">text</p>
+    <p class="ggg">text</p>
+</div>
+
+<script>
+    /*let parent = document.querySelector('#elem');
+    parent.firstElementChild.classList.toggle('colored');
+    parent.lastElementChild.classList.toggle('colored');
+    let elems = parent.children;
+    for (let elem of elems) {
+        elem.innerHTML += '!';
+    }*/
+
+    /*let elem = document.querySelector('#elem');
+    let firstParent = elem.parentElement;
+    firstParent.parentElement.style.border = '1px solid red';*/
+
+    /*let elem = document.querySelector('#elem');
+    let parent = elem.closest('div');
+    console.log(parent);*/
+
+    /*let elem = document.querySelector('#elem');
+    let parent = elem.closest('.www');
+    console.log(parent);*/
+
+    /*let elem = document.querySelector('#elem');
+    let sibling = elem.previousElementSibling;
+    sibling.innerHTML += '!';*/
+
+    /*let elem = document.querySelector('#elem');
+    let sibling = elem.nextElementSibling;
+    sibling.innerHTML += '!';*/
+
+    /*let elem = document.querySelector('#elem');
+    let sibling = elem.nextElementSibling;
+    let nextSibling = sibling.nextElementSibling;
+    nextSibling.innerHTML += '!';*/
+
+    /*let elem = document.querySelector('#elem');
+    let upSibling = elem.previousElementSibling;
+    let downSibling = elem.nextElementSibling;
+    let toggleSibling = upSibling.innerHTML;
+    upSibling.innerHTML = downSibling.innerHTML;
+    downSibling.innerHTML = toggleSibling;*/
+
+    /*let elem = document.getElementById('elem');
+    elem.innerHTML = 'text';*/
+
+    /*let elems = document.getElementsByTagName('li');
+    for (let elem of elems) {
+        elem.classList.add('colored');
+    }*/
+
+    /*let elems = document.getElementsByClassName('www');
+    for (let elem of elems) {
+        // elem.style.color = 'red';
+        elem.classList.add('colored');
+    }*/
+
+    let parent = document.querySelector('#parent');
+    let elems1 = parent.querySelectorAll('.www');
+    let elems2 = parent.querySelectorAll('.ggg');
+
+</script>
+</body>
+</html>
