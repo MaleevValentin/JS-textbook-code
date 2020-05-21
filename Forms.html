@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+
+<!--<textarea name="" id="elem" cols="30" rows="10"></textarea>
+<p class="elem"></p>-->
+
+<!--<input type="text" id="elem" value="text">
+<input type="submit" id="button1">
+<input type="submit" id="button2">-->
+
+<!--<input type="text" id="elem" value="text" disabled>
+<input type="submit" id="button">-->
+
+<!--<input type="checkbox" id="elem"><br>
+<input type="submit" id="button">
+<p class="elem"></p>-->
+
+<!--<input type="checkbox" id="elem">
+<input type="submit" id="button">-->
+
+<!--<input type="radio" name="elem" value="text11">Text1<br>
+<input type="radio" name="elem" value="text222" checked>Text2<br>
+<input type="radio" name="elem" value="text3333">Text3<br>
+<p class="paragraph"></p>
+<input type="submit" id="button">-->
+
+<!--<input type="text" id="elem" value="text">
+<p class="elem1"></p>-->
+
+<!--<input type="checkbox" id="elem" checked>Checkbox-->
+
+<!--<input type="text" id="elem1"><br>
+<input type="text" id="elem2">-->
+
+<script>
+    /*let text = document.querySelector('#elem');
+    let elem  = document.querySelector('.elem');
+    text.addEventListener('blur', function () {
+        elem.innerHTML = text.value;
+        text.value = '';
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        elem.disabled = true;
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let button1 = document.querySelector('#button1');
+    let button2 = document.querySelector('#button2');
+    button1.addEventListener('click', function () {
+        elem.disabled = true;
+    });
+    button2.addEventListener('click', function () {
+        elem.disabled = false;
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        if (elem.disabled) {
+            alert('Input is blocked');
+        } else {
+            alert('Input enabled');
+        }
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let button1 = document.querySelector('#button1');
+    let button2 = document.querySelector('#button2');
+    button1.addEventListener('click', function () {
+        elem.checked = true;
+    });
+    button2.addEventListener('click', function () {
+        elem.checked = false;
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+    let paragraph = document.querySelector('.elem');
+    button.addEventListener('click', function () {
+        if (elem.checked) {
+            paragraph.innerHTML = 'Hello';
+        } else {
+            paragraph.innerHTML = 'Goodbye';
+        }
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        elem.checked = !elem.checked;
+    });*/
+
+    /*let button = document.querySelector('#button');
+    let paragraph = document.querySelector('.paragraph');
+    let radios = document.querySelectorAll('input[type="radio"]')
+    button.addEventListener('click', function () {
+       for (let radio of radios) {
+           if (radio.checked) {
+               paragraph.innerHTML = radio.value;
+           }
+       }
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let elem1 = document.querySelector('.elem1');
+    elem.addEventListener('change', function () {
+        elem1.innerHTML = this.value;
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('change', function () {
+       if (this.checked) {
+           alert('Checked');
+       } else {
+           alert('Unchecked');
+       }
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('change', function () {
+        let arr = this.value.split('');
+        if (arr.length < 5) {
+            this.style.border = '2px solid green';
+        } else {
+            this.style.border = '2px solid red';
+        }
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('input', function () {
+        console.log(this.value);
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('input', function () {
+        if (this.value.length === 5) {
+            alert('Длина текста 5 символов');
+        }
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let text = document.querySelector('.paragraph');
+    elem.addEventListener('input', function () {
+        let count = this.value.length;
+        let num = 5;
+        let result;
+
+        if (count < num) {
+            result = 'Еще можно ввести ' + (num - count) + ' символов';
+        } else if (count === num) {
+            result = 'Уже введено ' + count + ' символов';
+        } else {
+            result = 'Длина текста превышена на ' + (count - num) + ' символов';
+        }
+        text.innerHTML = result;
+    });*/
+
+    let elem1 = document.querySelector('#elem1');
+    let elem2 = document.querySelector('#elem2');
+    elem1.addEventListener('input', function () {
+        if (this.value.length === 2) {
+            elem2.focus();
+        }
+    });
+    elem2.addEventListener('input', function () {
+        if (this.value.length === 2) {
+            this.blur();
+        }
+    });
+</script>
+</body>
+</html>
