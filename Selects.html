@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selects</title>
+</head>
+<body>
+<!--<select name="" id="select">
+    <option>one</option>
+    <option>two</option>
+    <option selected>three</option>
+</select>
+<p id="elem"></p>
+<input type="submit" id="button">-->
+
+<!--<select id="select">
+    <option>one</option>
+    <option selected>two</option>
+    <option>three</option>
+</select>-->
+
+<!--
+<select name="" id="select">
+    <option>2020</option>
+    <option>2021</option>
+    <option>2022</option>
+    <option>2023</option>
+    <option>2024</option>
+    <option>2025</option>
+    <option>2026</option>
+    <option>2027</option>
+    <option>2028</option>
+    <option>2029</option>
+    <option>2030</option>
+</select>
+<p></p>-->
+
+<!--<select id="select">
+    <option value="1">one</option>
+    <option value="2" selected>two</option>
+    <option value="3">three</option>
+</select>-->
+
+<!--<select id="select">
+    <option value="1">Понедельник</option>
+    <option value="2" selected>Вторник</option>
+    <option value="3">Среда</option>
+    <option value="4">Четверг</option>
+    <option value="5">Пятница</option>
+    <option value="6">Суббота</option>
+    <option value="7">Воскресенье</option>
+</select>
+<p></p>-->
+
+<!--<select id="select">
+    <option value="one">один</option>
+    <option value="two" selected>два</option>
+    <option value="three">три</option>
+</select>
+<input type="submit" id="button">-->
+
+<!--select name="" id="select">
+    <option value="0">Январь</option>
+    <option value="1">Февраль</option>
+    <option value="2">Март</option>
+    <option value="3">Апрель</option>
+    <option value="4">Май</option>
+    <option value="5">Июнь</option>
+    <option value="6">Июль</option>
+    <option value="7">Август</option>
+    <option value="8">Сентябрь</option>
+    <option value="9">Октябрь</option>
+    <option value="10">Ноябрь</option>
+    <option value="11">Декабрь</option>
+</select>-->
+
+<!--<input type="text" id="elem">
+<select name="" id="select">
+    <option value="">1</option>
+    <option value="">2</option>
+    <option value="">3</option>
+    <option value="">4</option>
+    <option value="">5</option>
+    <option value="">6</option>
+    <option value="">7</option>
+    <option value="">8</option>
+    <option value="">9</option>
+    <option value="">10</option>
+</select>-->
+
+<!--<select name="" id="select">
+    <option value="0">Воскресенье</option>
+    <option value="1">Понедельник</option>
+    <option value="2">Вторник</option>
+    <option value="3">Среда</option>
+    <option value="4">Четверг</option>
+    <option value="5">Пятница</option>
+    <option value="6">Суббота</option>
+</select>
+<input type="submit" id="button">-->
+
+
+<script>
+    /*let button = document.querySelector('#button');
+    let elem = document.querySelector('#elem');
+    let select = document.querySelector('#select');
+    button.addEventListener('click', function () {
+        elem.innerHTML = select.value;
+    });*/
+
+    /*let select = document.querySelector('#select');
+    select.addEventListener('change', function(){
+        console.log(this.value);
+    });*/
+
+    /*let p = document.querySelector('p');
+    let select = document.querySelector('#select');
+    function isLeap(year) {
+        let date = new Date(year);
+        return date.getFullYear() % 4 === 0;
+    }
+    select.addEventListener('change', function () {
+        if (isLeap(this.value)) {
+            p.innerHTML = 'Высокосный год';
+        } else {
+            p.innerHTML = 'Обычный год';
+        }
+    });*/
+
+    /*let select = document.querySelector('#select');
+    select.addEventListener('change', function () {
+        console.log(this.value);
+    });*/
+
+    /*let select = document.querySelector('#select');
+    let p = document.querySelector('p');
+    select.addEventListener('change', function () {
+        if (+this.value === 6 || +this.value === 7) {
+            p.innerHTML = 'Weekend';
+        } else {
+            p.innerHTML = 'Working day';
+        }
+    });*/
+
+    /*let select = document.querySelector('#select');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        select.value = 'one';
+    });*/
+
+    /*let select = document.querySelector('#select');
+    let date = new Date();
+    select.value = date.getMonth();*/
+
+    /*let elem = document.querySelector('#elem');
+    let select = document.querySelector('#select');
+    elem.addEventListener('blur', function () {
+        select.selectedIndex = +this.value;
+    });*/
+
+    /*let select = document.querySelector('#select');
+    let date = new Date();
+    select.selectedIndex = date.getDay();*/
+
+    /*let select = document.querySelector('#select');
+    for (let option of select) {
+        option.innerHTML += ' ' + option.value;
+    }*/
+
+    /*let select = document.querySelector('#select');
+    for (let option of select) {
+        if (option.selected) {
+            option.text += '!';
+        } else {
+            option.text += '?';
+        }
+    }*/
+
+    /*let select = document.querySelector('#select');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        let option = select[select.length - 1];
+        option.selected = true;
+    });*/
+
+    /*let select = document.querySelector('#select');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        let text = select[select.selectedIndex].text;
+        console.log(text);
+    });*/
+
+    let select = document.querySelector('#select');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        let option = select[select.selectedIndex];
+        option.text += '!';
+    });
+</script>
+</body>
+</html>
