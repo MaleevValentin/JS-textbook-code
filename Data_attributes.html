@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data attributes</title>
+</head>
+<body>
+
+<!--<div id="elem" data-text="str">text</div>-->
+
+<!--<div data-num="1">text</div>
+<div data-num="2">text</div>
+<div data-num="3">text</div>
+<div data-num="4">text</div>
+<div data-num="5">text</div>-->
+
+<!--<input type="submit" data-click="0" id="button">-->
+
+<!--<input id="elem" data-length="5">-->
+
+<!--<input id="elem" data-min="5" data-max="10">-->
+
+<!--<div id="elem" data-product-price="1000" data-product-amount="5">
+    товар яблоки
+</div>-->
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+<script>
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('click', function () {
+        elem.innerHTML += elem.dataset.text;
+    });*/
+
+    /*let divs = document.querySelectorAll('div');
+    for (let div of divs) {
+        div.addEventListener('click', function () {
+            this.innerHTML += this.dataset.num;
+        });
+    }*/
+
+    /*let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        this.dataset.click++;
+    });
+    button.addEventListener('dblclick', function () {
+        alert(this.dataset.click);
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('blur', function () {
+        if (this.value.length !== +this.dataset.length) {
+            alert('Количество введенных символов не совпадает');
+        } else {
+            alert('OK');
+        }
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('blur', function () {
+        if (!(this.value.length >= +this.dataset.min && this.value.length <= +this.dataset.max)) {
+            alert('Количество введенных символов не попадает в диапазон');
+        }
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('click', function () {
+        this.innerHTML += ' ' + this.dataset.productPrice * this.dataset.productAmount
+    });*/
+
+    let paragraphs = document.querySelectorAll('p');
+    let i = 1;
+    for (let p of paragraphs) {
+        p.setAttribute('data-num', i++);
+    }
+</script>
+</body>
+</html>
