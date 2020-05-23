@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Event</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<!--<button id="elem">text</button>-->
+
+<!--<div id="elem">0 : 0</div>-->
+
+<!--<div id="elem">
+    <p>text</p>
+</div>-->
+
+<!--<ul id="elem">
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+</ul>-->
+
+<!--<input type="text" id="elem">
+<p></p>-->
+
+<!--<ul id="elem">
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+</ul>-->
+
+<!--<input type="text" class="num"><br>
+<input type="text" class="num">
+<p></p>
+<a href="#" id="link">Посчитать</a>-->
+
+<script>
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('click', function (event) {
+        console.log(event);
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    document.addEventListener('mousemove', function (event) {
+        elem.innerHTML = event.clientX + ' : ' + event.clientY;
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('click', func);
+    elem.addEventListener('dblclick', func);
+
+    function func(event) {
+        if (event.type === 'click') {
+            this.style.backgroundColor = 'green';
+        } else if (event.type === 'dblclick') {
+            this.style.backgroundColor = 'red';
+        }
+    }*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('click', function(event) {
+        console.log(event.target); // выведет наш абзац
+        console.log(this);         // выведет наш див
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('click', function (event) {
+        if (event.target.tagName.toLowerCase() === 'li') {
+            event.target.innerHTML += '!';
+        } else if (event.target.tagName.toLowerCase() === 'ul') {
+            event.target.innerHTML += '<li>text</li>';
+        }
+
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let p = document.querySelector('p');
+    document.addEventListener('keydown', function (event) {
+        if (event.code === 'Enter') {
+            p.innerHTML = elem.value;
+            elem.value = '';
+        }
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('click', function (event) {
+        event.ctrlKey ? alert('Ctrl') : 0;
+        event.altKey ? alert('Alt') : 0;
+        event.shiftKey ? alert('Shift') : 0;
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('click', function (event) {
+        event.altKey ? this.style.backgroundColor = 'red' : 0;
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('click', function (event) {
+        event.ctrlKey ? event.target.innerHTML += ' 1' : 0;
+        event.shiftKey ? event.target.innerHTML += ' 2' : 0;
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('click', function (event) {
+        event.preventDefault();
+        this.innerHTML += ' ' + this.href;
+    });*/
+
+    let link = document.querySelector('#link');
+    let nums = document.querySelectorAll('.num');
+    let p = document.querySelector('p');
+    link.addEventListener('click', function (event) {
+        event.preventDefault();
+        let result = 0;
+        for (let num of nums) {
+            result += +num.value;
+        }
+        p.innerHTML = String(result);
+    });
+
+</script>
+</body>
+</html>
