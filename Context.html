@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Context</title>
+</head>
+<body>
+
+<!--<input id="elem" value="text">-->
+
+<!--<input id="elem" value="привет">-->
+
+<!--<input id="elem1" value="text1">
+<input id="elem2" value="text2">
+<input id="elem3" value="text3">-->
+
+<!--<input type="text" id="elem" value="привет">-->
+
+<script>
+    'use strict'
+    /*function func() {
+        console.log(this);
+    }
+
+    func();
+    console.log(this);*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('blur', parent);
+
+    function parent() {
+        console.log(this.value); //text
+        function child() {
+            console.log(this.value); //error
+        }
+        child();
+    }*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('blur', func);
+
+    function func() {
+        let self = this;
+        alert(square());
+
+        function square() {
+            return self.value * self.value;
+        }
+    }*/
+
+    /* let elem = document.querySelector('#elem');
+     elem.addEventListener('blur', func);
+
+     function func() {
+         alert(square(this));
+
+         function square(param) {
+             return param.value * param.value;
+         }
+     }*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('blur', parent);
+
+    function parent() {
+        console.log(this.value); // выведет 'text'
+
+        let child = () => {
+            console.log(this.value); // выведет 'text'
+        }
+        child();
+    }*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('blur', func);
+
+    function func() {
+        let square = () => this.value * this.value;
+        alert(square());
+    }*/
+
+    /*let elem = document.querySelector('#elem');
+    function func() {
+        console.log(this.value);
+    }
+    func.call(elem);*/
+
+    /*function func() {
+        console.log(this.value);
+    }
+    let elem1 = document.querySelector('#elem1');
+    let elem2 = document.querySelector('#elem2');
+    let elem3 = document.querySelector('#elem3');
+    func.call(elem1);
+    func.call(elem2);
+    func.call(elem3);*/
+
+    /*let elem = document.querySelector('#elem');
+
+    function func(surname, name) {
+        console.log(this.value + ', ' + surname + ' ' + name);
+    }
+
+    func.call(elem, 'Иванов', 'Иван');*/
+
+    /*let elem = document.querySelector('#elem');
+
+    function func(surname, name) {
+        console.log(this.value + ', ' + surname + ' ' + name);
+    }
+
+    func.apply(elem, ['Иванов', 'Иван']);*/
+
+    /*let elem = document.querySelector('#elem');
+    function func(param1, param2) {
+        console.log(this.value + param1 + param2);
+    }
+    let newFunc = func.bind(elem);
+    newFunc('1', '2');*/
+
+    let elem = document.querySelector('#elem');
+    function func(surname, name) {
+        console.log(this.value + ', ' + surname + ' ' + name);
+    }
+    func = func.bind(elem);
+    func('Иванов', 'Иван');
+    func('Петров', 'Петр');
+</script>
+</body>
+</html>
