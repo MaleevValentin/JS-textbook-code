@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timers</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<!--<button id="start">Timer ON</button>
+<button id="stop">Timer OFF</button>-->
+
+<!--<input type="submit" id="start" value="start">
+<input type="submit" id="stop" value="stop">-->
+
+<!--<input type="text" id="elem" value="10">-->
+
+<!--<input type="text" id="elem" value="text">-->
+
+<!--<input type="button" id="elem" value="10">-->
+
+<!--<input type="button" id="elem" value="1">-->
+
+<!--<p>10</p>
+<input type="submit" id="button">-->
+
+<!--<input type="text" id="elem"><br>
+<p></p>-->
+
+<!--<input type="text" id="elem"><br>
+<button id="button">OK</button>
+<p></p>-->
+
+<!--<p></p>
+<button id="start">Start</button>
+<button id="stop">Stop</button>-->
+
+<!--<p id="elem"></p>-->
+
+<!--<input type="submit" id="elem">-->
+<!--<p id="elem"></p>-->
+<script>
+    'use strict'
+    /*setInterval(function () {
+        console.log('Forza Juve!!!');
+    }, 3000);*/
+
+    /*let i = 0;
+    setInterval(() => console.log(++i) , 1000);*/
+
+    /*let num = 100;
+    setInterval(() => console.log(num--), 1000);*/
+
+    /*let i = 0;
+    let timerId = setInterval(function () {
+        console.log(++i);
+        if (i >= 10) {
+            clearInterval(timerId);
+        }
+    }, 1000);*/
+
+    /*let i = 10;
+    let timerId = setInterval(function () {
+        console.log(--i);
+        if (i <= 0) {
+            clearInterval(timerId);
+        }
+    }, 1000);*/
+
+    /*let start = document.querySelector('#start');
+    start.addEventListener('click', function () {
+        let i = 0;
+        setInterval(function () {
+            console.log(++i);
+        }, 1000);
+    });*/
+
+    /*let start = document.querySelector('#start');
+    start.addEventListener('click', function func() {
+        let i = 100;
+        setInterval(function () {
+            console.log(i--);
+        }, 1000);
+        this.removeEventListener('click', func);
+    });*/
+
+    /*let start = document.querySelector('#start');
+    let stop = document.querySelector('#stop');
+    let timerId;
+    start.addEventListener('click', function () {
+        let i = 0;
+        timerId = setInterval(function () {
+            console.log(++i);
+        }, 1000);
+    });
+    stop.addEventListener('click', function () {
+        clearInterval(timerId);
+    });*/
+
+    /*let num = 20;
+    let timerID;
+    let start = document.querySelector('#start');
+    let stop = document.querySelector('#stop');
+    start.addEventListener('click', function func() {
+        timerID = setInterval(() => {
+            console.log(--num);
+            if (num <= 0) {
+                clearInterval(timerID);
+            }
+        }, 1000);
+    });
+
+    stop.addEventListener('click', function () {
+        clearInterval(timerID);
+    });*/
+
+    /*let start = document.querySelector('#start');
+    let stop = document.querySelector('#stop');
+    let timerId;
+
+    start.addEventListener('click', function () {
+        timerId = setInterval(function () {
+            let date = new Date();
+            console.log(date.getMinutes() + ' ' + date.getSeconds());
+        }, 1000);
+    });
+
+    stop.addEventListener('click', function () {
+        clearInterval(timerId);
+    });*/
+
+    /*let start = document.querySelector('#start');
+    let stop = document.querySelector('#stop');
+
+    let timerId;
+
+    start.addEventListener('click', function () {
+        timerId = setInterval(function () {
+            let date = new Date();
+            console.log(date.getMinutes() + ' ' + date.getSeconds());
+        }, 1000);
+    });
+
+    stop.addEventListener('click', function () {
+        clearInterval(timerId);
+    });*/
+
+    /*let start = document.querySelector('#start');
+    let stop = document.querySelector('#stop');
+    let timerId;
+
+    function func() {
+        timerId = setInterval(function () {
+            let date = new Date();
+            console.log(date.getMinutes() + ' ' + date.getSeconds());
+        }, 1000);
+        this.removeEventListener('click', func);
+    }
+
+    start.addEventListener('click', func);
+
+    stop.addEventListener('click', function func1() {
+        clearInterval(timerId);
+        start.addEventListener('click', func);
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let timerID = setInterval(function () {
+        elem.value--;
+        if (+elem.value === 0) {
+            clearInterval(timerID);
+        }
+    }, 1000);*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('click', function () {
+        let self = this;
+        setInterval(function () {
+            console.log(self.value);
+        }, 1000);
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+
+    elem.addEventListener('click', function () {
+        let self = this;
+        setInterval(function () {
+            self.value = Number(self.value) + 1;
+        }, 1000);
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+
+    elem.addEventListener('click', function () {
+        setInterval(() => this.value++, 1000);
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+
+    elem.addEventListener('click', function () {
+        function func(self) {
+            return function () {
+                self.value++;
+            }
+        }
+
+        setInterval(func(this), 1000);
+    });*/
+
+    /* let elem = document.querySelector('#elem');
+     elem.addEventListener('click', function () {
+         setInterval(function (self) {
+             self.value--;
+         }, 1000, this);
+     });*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('click', function () {
+        setInterval(func, 1000, this);
+
+        function func(self) {
+            self.value--;
+        }
+    });*/
+
+    /*let button = document.querySelector('#button');
+    let p = document.querySelector('p');
+    button.addEventListener('click', function () {
+        setInterval(() => p.innerHTML++, 1000);
+    });*/
+
+    /*let button = document.querySelector('#button');
+    let p = document.querySelector('p');
+    button.addEventListener('click', function () {
+        let timerId = setInterval(() => {
+            p.innerHTML--;
+            if (+p.innerHTML === 0) {
+                clearInterval(timerId);
+            }
+        }, 1000);
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    setInterval(() => elem.value *= elem.value, 1000);*/
+
+    /*let elem = document.querySelector('#elem');
+    let p = document.querySelector('p');
+    elem.addEventListener('blur', function () {
+        p.innerHTML = this.value;
+
+        let timerId = setInterval(function () {
+            p.innerHTML--;
+            if (+p.innerHTML === 0) {
+                clearInterval(timerId);
+            }
+        }, 1000);
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+    let p = document.querySelector('p');
+    button.addEventListener('click', function () {
+        p.innerHTML = elem.value;
+        let timerID = setInterval(function () {
+            p.innerHTML--;
+            if (+p.innerHTML === 0) {
+                clearInterval(timerID);
+            }
+        }, 1000);
+    });*/
+
+    /*let p = document.querySelector('p');
+    let start = document.querySelector('#start');
+    let stop = document.querySelector('#stop');
+    let timerId;
+    p.innerHTML = '';
+
+    function func() {
+        timerId = setInterval(() => p.innerHTML++, 1000);
+        this.removeEventListener('click', func);
+    }
+
+    start.addEventListener('click', func);
+    stop.addEventListener('click', function () {
+        clearInterval(timerId);
+        start.addEventListener('click', func);
+    });*/
+
+    /*let elem = document.querySelector('p');
+    elem.style.color = 'red';
+    setInterval(function () {
+
+        if (elem.style.color === 'red') {
+            elem.style.color = 'green';
+        } else if (elem.style.color === 'green') {
+            elem.style.color = 'red';
+        }
+    }, 1000);*/
+
+    /*let elem = document.querySelector('#elem');
+    setInterval(function () {
+        let date = new Date();
+        elem.innerHTML = func(date.getHours()) + ':' + func(date.getMinutes()) + ':' + func(date.getSeconds());
+    }, 1000);
+
+    function func(num) {
+        if (num >= 0 && num <= 9) {
+            return '0' + num;
+        } else {
+            return num;
+        }
+    }*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('click', function () {
+        setTimeout(function () {
+            alert('!');
+        }, 3000);
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    window.onload = setTimeout(function () {
+        elem.innerHTML = 'Hello!!!!!'
+    }, 5000);*/
+
+    /*let i = 0;
+
+    setTimeout(function timer() {
+        console.log(i++);
+
+        if (i <= 10) { // запускаем, только если счетчик меньше 10
+            timer();
+        }
+    }, 3000);*/
+
+    /*let i = 0;
+
+    setTimeout(function timer() {
+        console.log(i++);
+
+        if (i <= 10) { // запускаем, только если счетчик меньше 10
+            timer();
+        }
+    }, 3000);*/
+
+    let i = 0;
+    console.log(i);
+    let delay = 1000;
+    let timerId = setTimeout(function timer() {
+        console.log(++i);
+
+        if (i !== 0) {
+            delay += 1000;
+        }
+        timerId = setTimeout(timer, delay);
+
+
+    }, delay);
+</script>
+</body>
+</html>
