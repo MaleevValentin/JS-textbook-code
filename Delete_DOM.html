@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<!--<ul id="parent">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+<input type="submit" id="button">-->
+
+<!--<ul>
+    <li>1</li>
+    <li id="elem">2</li>
+    <li>3</li>
+</ul>-->
+
+<!--<div id="parent">
+    <p>elem 1</p>
+    <p>elem 2</p>
+    <p>elem 3</p>
+    <p>elem 4</p>
+    <p>elem 5</p>
+</div>-->
+
+<!--<ul id="parent">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>-->
+
+<!--<div id="parent"></div>-->
+
+<!--<ul id="parent">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+
+<input type="submit" id="button">-->
+
+<!--<div id="parent">
+    <p id="elem">text</p>
+    <a href="" id="remove">remove</a>
+</div>-->
+
+<!--<div id="parent">
+    <p>text1</p>
+    <p>text2</p>
+    <p>text3</p>
+</div>-->
+
+<!--<ul id="parent">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>-->
+
+<table id="table">
+    <tr>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>2</td>
+    </tr>
+</table>
+
+<script>
+    'use strict'
+    /*let parent = document.querySelector('#parent');
+   let elem = document.querySelector('#elem');
+   let button = document.querySelector('#button');
+
+   button.addEventListener('click', function () {
+       parent.removeChild(elem);
+   });*/
+
+    /*let parent = document.querySelector('#parent');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        parent.removeChild(parent.lastElementChild);
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('click', function () {
+        this.parentElement.removeChild(this);
+    });*/
+
+    /*let parent = document.querySelector('#parent');
+    let elems = document.querySelectorAll('#parent p');
+    for (let elem of elems) {
+        elem.addEventListener('click', function () {
+            parent.removeChild(this);
+        });
+    }*/
+
+    /* let parent = document.querySelector('#parent');
+     let elements = document.querySelectorAll('#parent li');
+     for (let elem of elements) {
+         elem.addEventListener('click', function () {
+             parent.removeChild(this);
+         });
+     }*/
+
+    /*let parent = document.querySelector('#parent');
+    for (let i = 1; i <= 9; i++) {
+        let p = document.createElement('p');
+        p.innerHTML = i;
+
+        p.addEventListener('click', function () {
+            parent.removeChild(this);
+        });
+        parent.appendChild(p);
+    }*/
+
+    /*let parent = document.querySelector('#parent');
+    let button = document.querySelector('#button');
+
+    button.addEventListener('click', function () {
+        let li = document.createElement('li');
+        li.innerHTML = 'text';
+        parent.appendChild(li);
+
+        let currentLi = document.querySelectorAll('#parent li');
+
+        for (let li of currentLi) {
+            li.addEventListener('click', function () {
+                parent.removeChild(this);
+            });
+        }
+
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let remove = document.querySelector('#remove');
+    remove.addEventListener('click', function (event) {
+        elem.parentElement.removeChild(elem);
+        event.preventDefault();
+    });*/
+
+    /*let elements = document.querySelectorAll('#parent p');
+    for (let elem of elements) {
+        let remove = document.createElement('a');
+        remove.href = '';
+        remove.innerHTML = 'remove';
+        elem.appendChild(remove);
+
+        remove.addEventListener('click', function (event) {
+            elem.parentElement.removeChild(elem);
+            event.preventDefault();
+        });
+    }*/
+
+    /*let elements = document.querySelectorAll('#parent li');
+    for (let elem of elements) {
+        let remove = document.createElement('a');
+        remove.href = '';
+        remove.innerHTML += ' ' + 'remove';
+        elem.appendChild(remove);
+
+        remove.addEventListener('click', function (event) {
+            elem.parentElement.removeChild(elem);
+            event.preventDefault();
+        });
+    }*/
+
+    let trs = document.querySelectorAll('#table tr');
+    for (let tr of trs) {
+        let td = document.createElement('td');
+        let link = document.createElement('a');
+        tr.appendChild(td);
+        link.href = '';
+        link.innerHTML = 'remove';
+        td.appendChild(link);
+
+        link.addEventListener('click', function (event) {
+            tr.parentElement.removeChild(tr);
+            event.preventDefault();
+        });
+    }
+</script>
+</body>
+</html>
