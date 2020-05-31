@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manipulating Elements</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<!--<div id="parent">
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+</div>-->
+
+<!--<ol id="elem"></ol>
+<button id="button">click me</button>-->
+
+<!--<div id="parent"></div>
+<p></p>-->
+
+<!--<ul id="parent"></ul>-->
+
+<!--<ul id="elem"></ul>-->
+
+<!--<input type="text" id="elem1"><br>
+<input type="text" id="elem2">
+<button id="button">Create</button>
+<table id="table"></table>-->
+
+<!--<button id="button">Do it</button>
+<table id="table">
+    <tr>
+        <td>2</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>67</td>
+        <td>4</td>
+    </tr>
+</table>-->
+
+<!--<table id="table">
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+</table>-->
+
+<!--<ul id="parent">
+    <li>1</li>
+    <li id="elem">2</li>
+    <li>3</li>
+</ul>
+
+<input type="submit" id="button">-->
+
+<!--<ul id="parent">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+<input type="submit" id="button">-->
+
+<!--<ul>
+    <li>1</li>
+    <li id="elem">2</li>
+    <li>3</li>
+</ul>-->
+
+<div id="parent">
+    <p>elem 1</p>
+    <p>elem 2</p>
+    <p>elem 3</p>
+    <p>elem 4</p>
+    <p>elem 5</p>
+</div>
+
+<script>
+    'use strict'
+    /*let parent = document.querySelector('#parent');
+    let p = document.createElement('p');
+    p.innerHTML = '!';
+    parent.appendChild(p);*/
+
+    /*let elem = document.querySelector('#elem');
+    let li = document.createElement('li');
+    li.innerHTML = 'пункт';
+    elem.appendChild(li);*/
+
+    /*let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        let li = document.createElement('li');
+        li.innerHTML = 'пункт';
+        elem.appendChild(li);
+    });*/
+
+    /*let parent = document.querySelector('#parent');
+    let p = document.createElement('p');
+    p.innerHTML = '!';
+    p.addEventListener('click', function () {
+        alert(this.innerHTML);
+    });
+    parent.appendChild(p);*/
+
+    /*let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        let li = document.createElement('li');
+        elem.appendChild(li);
+        li.addEventListener('click', function () {
+            this.innerHTML = '!';
+        });
+    });*/
+
+    /*let parent = document.querySelector('#parent');
+    for (let i = 1; i <= 9; i++) {
+        let p = document.createElement('p');
+        p.innerHTML = '!';
+        parent.appendChild(p);
+    }*/
+
+    /*let parent = document.querySelector('#parent');
+    for (let i = 1; i <= 10; i++) {
+        let li = document.createElement('li');
+        li.innerHTML = String(i);
+        parent.appendChild(li);
+    }*/
+
+    /*let parent = document.querySelector('#parent');
+    for (let i = 1; i <= 9; i++) {
+        let p = document.createElement('p');
+        p.innerHTML = '!';
+
+        p.addEventListener('click', function () {
+            alert(this.innerHTML);
+        });
+
+        parent.appendChild(p);
+    }*/
+
+    /*let parent = document.querySelector('#parent');
+    let p = document.querySelector('p');
+    for (let i = 1; i <= 5; i++) {
+        let input = document.createElement('input');
+        parent.appendChild(input);
+
+        input.addEventListener('blur', function () {
+            p.innerHTML = this.value;
+        });
+    }*/
+
+    /*let parent = document.querySelector('#parent');
+    let arr = [1, 2, 3, 4, 5];
+    for (let elem of arr) {
+        let p = document.createElement('p');
+        p.innerHTML = elem;
+        parent.appendChild(p);
+    }*/
+
+    /*let parent = document.querySelector('#parent');
+    let arr = [1, 2, 3, 4, 5];
+    for (let elem of arr) {
+        let p = document.createElement('p');
+        p.innerHTML = elem;
+
+        p.addEventListener('click', function () {
+            p.innerHTML = elem + 1;
+        });
+
+        parent.appendChild(p);
+    }*/
+
+    /*let parent = document.querySelector('#parent');
+    let arr = [1, 2, 3, 4, 5];
+    for (let elem of arr) {
+        let li = document.createElement('li');
+        li.innerHTML = elem;
+
+        li.addEventListener('click', function () {
+            this.innerHTML = elem + '!';
+        });
+        parent.appendChild(li);
+    }*/
+
+    /*let elem = document.querySelector('#elem');
+    let arr = [1, 2, 3, 4, 5];
+    for (let num of arr) {
+        let li  = document.createElement('li');
+        li.innerHTML = num;
+
+        li.addEventListener('click', function () {
+            // alert(this.innerHTML);
+            this.innerHTML = num + '!';
+        });
+        elem.appendChild(li);
+    }*/
+
+    /*let table = document.querySelector('#table');
+    for (let i = 0; i < 3; i++) {
+        let tr = document.createElement('tr');
+        for (let i = 0; i < 3; i++) {
+            let td = document.createElement('td');
+            tr.appendChild(td);
+        }
+        table.appendChild(tr);
+    }*/
+
+    /*let rows = document.querySelector('#elem1')
+    let cols = document.querySelector('#elem2')
+    let button = document.querySelector('#button');
+    let table = document.querySelector('#table');
+
+    button.addEventListener('click', function () {
+        for (let i = 0; i < rows.value; i++) {
+            let tr = document.createElement('tr');
+            for (let i = 0; i < cols.value; i++) {
+                let td = document.createElement('td');
+                td.innerHTML = 'x';
+                tr.appendChild(td);
+            }
+            table.appendChild(tr);
+        }
+    });*/
+
+    /*let table = document.querySelector('#table');
+    let k = 2;
+    for (let i = 0; i < 5; i++) {
+        let tr = document.createElement('tr');
+        for (let i = 0; i < 5; i++) {
+            let td = document.createElement('td');
+            if (k % 2 === 0) {
+                td.innerHTML = k;
+                tr.appendChild(td);
+            } else {
+                i -= 1;
+            }
+            k++;
+
+        }
+        table.appendChild(tr);
+    }*/
+
+    /*let table = document.querySelector('#table');
+    let arr = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]];
+
+    for (let subArr of arr) {
+        let tr = document.createElement('tr');
+
+        for (let elem of subArr) {
+            let td = document.createElement('td');
+            td.innerHTML = elem;
+            tr.appendChild(td);
+        }
+
+        table.appendChild(tr);
+    }*/
+
+    /*let arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]];
+    let table = document.querySelector('#table');
+
+    for (let subArr of arr) {
+        let tr = document.createElement('tr');
+
+        for (let elem of subArr) {
+            let td = document.createElement('td');
+            td.innerHTML = elem * elem;
+            tr.appendChild(td);
+        }
+
+        table.appendChild(tr);
+    }*/
+
+    /*let users = [
+        {
+            name: 'name1',
+            surname: 'surname1',
+            patronymic: 'patronymic1'
+        },
+        {
+            name: 'name2',
+            surname: 'surname2',
+            patronymic: 'patronymic2'
+        },
+        {
+            name: 'name3',
+            surname: 'surname3',
+            patronymic: 'patronymic3'
+        },
+    ];
+
+    let table = document.getElementById('table');
+
+    for (let user of users) {
+        let tr = document.createElement('tr');
+
+        let td1 = document.createElement('td');
+        td1.innerHTML = user.name;
+        tr.appendChild(td1);
+
+        let td2 = document.createElement('td');
+        td2.innerHTML = user.surname;
+        tr.appendChild(td2);
+
+        let td3 = document.createElement('td');
+        td3.innerHTML = user.patronymic;
+        tr.appendChild(td3);
+
+        table.appendChild(tr);
+    }*/
+
+    /*let employees = [
+        {name: 'employee1', age: 30, salary: 400},
+        {name: 'employee2', age: 31, salary: 500},
+        {name: 'employee3', age: 32, salary: 600},
+    ];
+
+    let table = document.getElementById('table');
+
+    for (let employee of employees) {
+        let tr = document.createElement('tr');
+
+        let td1 = document.createElement('td');
+        td1.innerHTML = employee.name;
+        tr.appendChild(td1);
+
+        let td2 = document.createElement('td');
+        td2.innerHTML = employee.age;
+
+        td2.addEventListener('click', function () {
+            this.innerHTML++;
+        });
+        tr.appendChild(td2);
+
+        let td3 = document.createElement('td');
+        td3.innerHTML = employee.salary;
+
+        td3.addEventListener('click', function () {
+            this.innerHTML = +this.innerHTML + this.innerHTML * 0.1;
+        });
+        tr.appendChild(td3);
+
+        table.appendChild(tr);
+    }*/
+
+    /*let table = document.querySelector('#table');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        let tr = document.createElement('tr');
+        for (let i = 0; i < 3; i++) {
+            let td = document.createElement('td');
+            td.innerHTML = '!';
+            tr.appendChild(td);
+        }
+        table.appendChild(tr);
+    });*/
+
+    /*let table = document.querySelector('#table');
+    let button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        let newRow = document.createElement('tr');
+        let rows = document.querySelectorAll('#table tr');
+
+        for (let i = 0; i < rows.length; i++) {
+            let td = document.createElement('td');
+            newRow.appendChild(td);
+        }
+
+        table.appendChild(newRow);
+
+        let trs = document.querySelectorAll('#table tr');
+        for (let tr of trs) {
+            let td = document.createElement('td');
+            tr.appendChild(td);
+        }
+
+    });*/
+
+    /*let tds = document.querySelectorAll('#table td');
+    for (let td of tds) {
+        td.innerHTML = '!';
+    }*/
+
+    /*let button = document.querySelector('#button');
+    let tds = document.querySelectorAll('#table td');
+
+    button.addEventListener('click', function () {
+        for (let td of tds) {
+            td.innerHTML *= 2;
+        }
+    });*/
+
+    /*let tds = document.querySelectorAll('#table td');
+    for (let i = 0; i < tds.length; i++) {
+        tds[i].innerHTML = tds.length - i;
+    }*/
+
+    /*let trs = document.querySelectorAll('#table tr');
+    for (let i = 0; i < trs.length; i++) {
+        let tr = trs[i];
+        let tds = tr.querySelectorAll('td');
+
+        for (let j = 0; j < tds.length; j++) {
+            let td = tds[j];
+            td.innerHTML = (i + 1) + '.' + (j + 1);
+        }
+    }*/
+
+    /*let tds = document.querySelectorAll('#table td');
+    for (let i = 0; i < tds.length; i++) {
+        tds[i].addEventListener('click', function () {
+            this.innerHTML = tds.length - i;
+        });
+    }*/
+
+    /*let tds = document.querySelectorAll('#table td');
+    let i = 1;
+
+    for (let td of tds) {
+        td.addEventListener('click', function func() {
+            this.innerHTML = i;
+            i++;
+            this.removeEventListener('click', func);
+        });
+    }*/
+
+    /*let tds = document.querySelectorAll('#table td');
+    let i = 1;
+
+    for (let td of tds) {
+        td.addEventListener('click', function func() {
+            this.innerHTML = i;
+            if (i === 1) {
+                i = 2;
+            } else if (i === 2) {
+                i = 3;
+            } else {
+                i = 1;
+            }
+        });
+    }*/
+
+
+</script>
+</body>
+</html>
