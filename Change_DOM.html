@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<!--<div id="parent">
+    <p id="elem">text</p>
+    <input id="input">
+</div>-->
+
+<!--<div id="parent">
+    <p id="elem">text</p>
+</div>-->
+
+<!--<p>text1</p>
+<p>text2</p>
+<p>text3</p>-->
+
+<!--<ul id="parent">
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+</ul>-->
+
+<!--<table id="table">
+    <tr>
+        <td>345</td>
+        <td>345</td>
+    </tr>
+    <tr>
+        <td>345</td>
+        <td>345</td>
+    </tr>
+</table>-->
+
+<!--<div id="parent">
+    <p><span>text1</span></p>
+    <p><span>text2</span></p>
+    <p><span>text3</span></p>
+</div>-->
+
+<!--<div id="parent">
+    <p>text1</p>
+    <p>text2</p>
+    <p>text3</p>
+</div>-->
+
+<!--<p>text1</p>
+<p>text2</p>
+<p>text3</p>-->
+
+<!--<table id="table">
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+</table>-->
+
+<!--<p id="elem" class="hidden">text</p>
+<input type="submit" id="button" value="show">-->
+
+<!--<p id="elem1">1</p><button data-elem="elem1">toggle</button>
+<p id="elem2">2</p><button data-elem="elem2">toggle</button>
+<p id="elem3">3</p><button data-elem="elem3">toggle</button>-->
+
+<!--<table id="table">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>-->
+
+<!--<ul id="elem">
+    <li>43</li>
+    <li>45654</li>
+    <li>768y</li>
+    <li>fg</li>
+    <li>ghfg</li>
+    <li>dfysre</li>
+</ul>-->
+
+<!--<ul id="parent"></ul>
+<input type="text" id="add">-->
+
+<!--<table id="table"></table>
+<br>
+<input type="text" id="name"><br><br>
+<input type="text" id="age"><br><br>
+<input type="text" id="salary"><br><br>
+<button type="button" id="button">ADD</button>-->
+
+<!--<ul id="parent"></ul>-->
+
+
+
+<script>
+    'use strict'
+    /*let elem = document.querySelector('#elem');
+    let input = document.querySelector('#input');
+    input.value = elem.innerHTML;
+    input.addEventListener('input', function () {
+        elem.innerHTML = this.value;
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('click', function () {
+        let input = document.createElement('input');
+        input.value = elem.innerHTML;
+
+        input.addEventListener('blur', function () {
+            elem.innerHTML = this.value;
+            this.parentElement.removeChild(this);
+        });
+
+        elem.parentElement.appendChild(input);
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    elem.addEventListener('click', function func() {
+        let input = document.createElement('input');
+        input.value = elem.innerHTML;
+
+        elem.innerHTML = '';
+        elem.appendChild(input);
+
+        input.addEventListener('blur', function () {
+            elem.innerHTML = this.value;
+            elem.addEventListener('click', func);
+        });
+
+        elem.removeEventListener('click', func);
+    });*/
+
+    /*let elems = document.querySelectorAll('p');
+    for (let elem of elems) {
+        elem.addEventListener('click', function func() {
+            let input = document.createElement('input');
+            input.value = elem.innerHTML;
+
+            elem.innerHTML = '';
+            elem.appendChild(input);
+
+            input.addEventListener('blur', function () {
+                elem.innerHTML = this.value;
+                elem.addEventListener('click', func);
+            });
+            elem.removeEventListener('click', func);
+        });
+    }*/
+
+    /*let elements = document.querySelectorAll('li');
+    for (let elem of elements) {
+        elem.addEventListener('click', function func() {
+            let input = document.createElement('input');
+            input.value = elem.innerHTML;
+
+            elem.innerHTML = '';
+            elem.appendChild(input);
+
+            input.addEventListener('blur', function () {
+                elem.innerHTML = this.value;
+                elem.addEventListener('click', func);
+            });
+            elem.removeEventListener('click', func);
+        });
+    }*/
+
+    /*let tds = document.querySelectorAll('td');
+    for (let td of tds) {
+        td.addEventListener('click', function func() {
+            let input = document.createElement('input');
+            input.value = td.innerHTML;
+
+            td.innerHTML = '';
+            td.appendChild(input);
+
+            input.addEventListener('blur', function () {
+                td.innerHTML = this.value;
+                td.addEventListener('click', func);
+            });
+            td.removeEventListener('click', func);
+        });
+    }*/
+
+    /*let elements = document.querySelectorAll('#parent p');
+
+    for (let elem of elements) {
+        let span = document.createElement('span');
+        span.innerHTML = elem.innerHTML;
+        elem.innerHTML = '';
+        elem.appendChild(span);
+
+        let link = document.createElement('a');
+        link.href = '';
+        link.innerHTML += ' ' + 'remove';
+
+        link.addEventListener('click', function (event) {
+            elem.parentElement.removeChild(elem);
+            event.preventDefault();
+        });
+
+        elem.appendChild(link);
+    }
+
+    let spans = document.querySelectorAll('#parent p span');
+
+    for (let span of spans) {
+        span.addEventListener('click', function func() {
+            let input = document.createElement('input');
+            input.value = span.innerHTML;
+            span.innerHTML = '';
+            span.appendChild(input);
+
+            input.addEventListener('blur', function () {
+                span.innerHTML = this.value;
+                span.addEventListener('click', func);
+            });
+
+            span.removeEventListener('click', func);
+        });
+    }*/
+
+    /*let elements = document.querySelectorAll('p');
+
+    for (let elem of elements) {
+        let span = document.createElement('span');
+        span.innerHTML = elem.innerHTML;
+        elem.innerHTML = '';
+        elem.appendChild(span);
+
+        let link = document.createElement('a');
+        link.href = '';
+        link.innerHTML = 'decoration';
+
+        link.addEventListener('click', function func(event) {
+            span.classList.toggle('line-through');
+            event.preventDefault();
+            elem.removeChild(this);
+        });
+        elem.appendChild(link);
+    }*/
+
+    /*let trs = document.querySelectorAll('#table tr');
+
+    for (let tr of trs) {
+        let td = document.createElement('td');
+        tr.appendChild(td);
+
+        let link = document.createElement('a');
+        link.href = '';
+        link.innerHTML = 'background';
+
+        link.addEventListener('click', function (event) {
+            tr.classList.toggle('bg-green');
+            event.preventDefault();
+        });
+        td.appendChild(link);
+    }*/
+
+    /*let elem = document.querySelector('#elem');
+    let show = document.querySelector('#show');
+    let hide = document.querySelector('#hide');
+
+    hide.addEventListener('click', function () {
+        elem.classList.add('hidden');
+    });
+
+    show.addEventListener('click', function () {
+        elem.classList.remove('hidden');
+    });*/
+
+    /*let elem = document.querySelector('#elem');
+    let button = document.querySelector('#button');
+
+    button.addEventListener('click', function () {
+        elem.classList.toggle('hidden');
+        this.value === 'show' ? this.value = 'hide' : this.value = 'show';
+    });*/
+
+    /*let buttons = document.querySelectorAll('button');
+
+    for (let button of buttons) {
+        button.addEventListener('click', function () {
+            let elem = document.querySelector('#' + this.dataset.elem);
+            elem.classList.toggle('hidden');
+        });
+    }*/
+
+    /*let buttons = document.querySelectorAll('button');
+    let elems = document.querySelectorAll('p');
+
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', function () {
+            elems[i].classList.toggle('hidden');
+        });
+    }*/
+
+    /*let buttons = document.querySelectorAll('button');
+
+    for (let button of buttons) {
+        button.addEventListener('click', function () {
+            this.previousElementSibling.classList.toggle('hidden');
+        });
+    }*/
+
+    /*let tds = document.querySelectorAll('td');
+    for (let td of tds) {
+        td.addEventListener('click', function () {
+            this.classList.add('active');
+        });
+    }*/
+
+    /*let elems = document.querySelectorAll('#elem li');
+
+    for (let li of elems) {
+        li.addEventListener('click', function () {
+            this.classList.toggle('active');
+        });
+    }*/
+
+    /*let tds = document.querySelectorAll('#table td');
+
+    let color = 'color1';
+    for (let td of tds) {
+        td.addEventListener('click', function () {
+            if (color === 'color1') {
+                color = 'color2';
+            } else {
+                color = 'color1';
+            }
+            this.classList.add(color);
+        });
+    }*/
+
+    /*let tds = document.querySelectorAll('#table td');
+    let i = 0;
+    let colors = ['color1', 'color2', 'color3'];
+
+    for (let td of tds) {
+        td.addEventListener('click', function () {
+            this.classList.add(colors[i]);
+
+            i++;
+            if (i === colors.length) {
+                i = 0;
+            }
+        });
+    }*/
+
+    /*let tds = document.querySelectorAll('#table td');
+    for (let td of tds) {
+        td.addEventListener('click', function () {
+            let activeTds = document.querySelectorAll('#table td.active');
+
+            if (activeTds.length < 5) {
+                this.classList.add('active');
+            }
+        });
+    }*/
+
+    /*let tds = document.querySelectorAll('#table td');
+
+    for (let td of tds) {
+        td.addEventListener('click', function () {
+            if (this.previousElementSibling === null && (this.nextElementSibling.classList.contains('active') ===
+                false)) {
+                this.classList.add('active');
+            }
+
+            if (this.nextElementSibling === null && (this.previousElementSibling.classList.contains('active') ===
+                false)) {
+                this.classList.add('active');
+            }
+
+            if (!this.previousElementSibling.classList.contains('active') &&
+                !this.nextElementSibling.classList.contains('active')) {
+                this.classList.add('active');
+            }
+        });
+    }*/
+
+    /*let parent = document.querySelector('#parent');
+    let add = document.querySelector('#add');
+    let arr = [1, 2, 3];
+    for (let elem of arr) {
+        let li = document.createElement('li');
+        let span = document.createElement('span');
+        span.innerHTML = elem;
+        li.innerHTML = '';
+
+
+        span.addEventListener('click', function func() {
+            let input = document.createElement('input');
+            input.value = this.innerHTML;
+            this.innerHTML = '';
+
+            span.appendChild(input);
+
+            input.addEventListener('blur', function () {
+                span.innerHTML = this.value;
+                span.addEventListener('click', func);
+            });
+            span.removeEventListener('click', func);
+        });
+
+        let link = document.createElement('a');
+        link.href = '';
+        link.innerHTML = 'remove';
+        link.addEventListener('click', function (event) {
+            parent.removeChild(li);
+            event.preventDefault();
+        });
+
+        let line = document.createElement('a');
+        line.href = '';
+        line.innerHTML = 'line-through';
+        line.addEventListener('click', function (event) {
+            span.classList.add('line-through');
+            event.preventDefault();
+        });
+
+
+        parent.appendChild(li);
+        li.appendChild(span);
+        li.appendChild(link);
+        li.appendChild(line);
+    }
+
+    add.addEventListener('change', function () {
+        let li = document.createElement('li');
+        let span = document.createElement('span');
+        span.innerHTML = this.value;
+
+        span.addEventListener('click', function func() {
+            let input = document.createElement('input');
+            input.value = this.innerHTML;
+            this.innerHTML = '';
+
+            span.appendChild(input);
+
+            input.addEventListener('blur', function () {
+                span.innerHTML = this.value;
+                span.addEventListener('click', func);
+            });
+            span.removeEventListener('click', func);
+        });
+
+        let link = document.createElement('a');
+        link.href = '';
+        link.innerHTML = 'remove';
+        link.addEventListener('click', function (event) {
+            parent.removeChild(li);
+            event.preventDefault();
+        });
+
+        let line = document.createElement('a');
+        line.href = '';
+        line.innerHTML = 'line-through';
+        line.addEventListener('click', function (event) {
+            span.classList.add('line-through');
+            event.preventDefault();
+        });
+
+        parent.appendChild(li);
+        li.appendChild(span);
+        li.appendChild(link);
+        li.appendChild(line);
+    });*/
+
+    /*let table = document.querySelector('#table');
+    let employees = [
+        {name: 'employee1', age: 30, salary: 400},
+        {name: 'employee2', age: 31, salary: 500},
+        {name: 'employee3', age: 32, salary: 600},
+    ];
+
+    for (let elem of employees) {
+        let tr = document.createElement('tr');
+        table.appendChild(tr);
+
+        let td1 = document.createElement('td');
+        td1.innerHTML = elem.name;
+        tr.appendChild(td1);
+
+        let td2 = document.createElement('td');
+        td2.innerHTML = elem.age;
+        tr.appendChild(td2);
+
+        let td3 = document.createElement('td');
+        td3.innerHTML = elem.salary;
+        tr.appendChild(td3);
+    }
+
+    let tds = document.querySelectorAll('#table td');
+    for (let td of tds) {
+        td.addEventListener('click', function func() {
+            let input = document.createElement('input');
+            input.value = td.innerHTML;
+            td.innerHTML = '';
+
+            input.addEventListener('blur', function () {
+                td.innerHTML = this.value;
+                td.addEventListener('click', func);
+            });
+
+            td.appendChild(input);
+            td.removeEventListener('click', func);
+        });
+    }
+
+    let trs = document.querySelectorAll('#table tr');
+    for (let tr of trs) {
+        let td = document.createElement('td');
+        tr.appendChild(td);
+
+        let link = document.createElement('a');
+        link.href = '';
+        link.innerHTML = 'remove';
+
+        link.addEventListener('click', function (event) {
+            table.removeChild(tr);
+            event.preventDefault();
+        });
+
+        td.appendChild(link);
+    }
+
+    let inputs = document.querySelectorAll('input');
+    let button = document.querySelector('#button');
+
+    button.addEventListener('click', function () {
+        let tr = document.createElement('tr');
+        table.appendChild(tr);
+        for (let input of inputs) {
+            let td = document.createElement('td');
+            td.innerHTML = input.value;
+
+            td.addEventListener('click', function func() {
+                let input = document.createElement('input');
+                input.value = this.innerHTML;
+                this.innerHTML = '';
+
+                input.addEventListener('blur', function () {
+                    td.innerHTML = this.value;
+                    td.addEventListener('click', func);
+                });
+
+                td.appendChild(input);
+                td.removeEventListener('click', func);
+            });
+
+            tr.appendChild(td);
+        }
+    });*/
+
+    /*let ul = document.querySelector('#parent');
+    let employees = [
+        {name: 'employee1', age: 30, salary: 400},
+        {name: 'employee2', age: 31, salary: 500},
+        {name: 'employee3', age: 32, salary: 600},
+    ];
+
+    for (let elem of employees) {
+        let li = document.createElement('li');
+
+        let link = document.createElement('a');
+        link.href = '';
+        link.innerHTML = 'remove';
+
+        link.addEventListener('click', function (event) {
+            li.parentElement.removeChild(li);
+            event.preventDefault();
+        });
+
+        let span = document.createElement('span');
+        span.className = 'name';
+        span.innerHTML = elem.name;
+
+        let span2 = document.createElement('span');
+        span2.className = 'age';
+        span2.innerHTML = elem.age;
+
+        let span3 = document.createElement('span');
+        span3.className = 'salary';
+        span3.innerHTML = elem.salary;
+
+        addEventSpan(span);
+        addEventSpan(span2);
+        addEventSpan(span3);
+
+        ul.appendChild(li);
+        li.appendChild(span);
+        li.appendChild(span2);
+        li.appendChild(span3);
+        li.appendChild(link);
+
+    }
+
+    function addEventSpan(span) {
+        span.addEventListener('click', function func() {
+            let input = document.createElement('input');
+            input.value = this.innerHTML;
+            this.innerHTML = '';
+
+            input.addEventListener('blur', function () {
+                span.innerHTML = this.value;
+                span.addEventListener('click', func);
+            });
+            span.appendChild(input);
+            span.removeEventListener('click', func);
+        });
+    }*/
+</script>
+</body>
+</html>

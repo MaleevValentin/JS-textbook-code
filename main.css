@@ -26,3 +26,27 @@ td {
     height: 50px;
     border: 1px solid black;
 }
+
+.bg-green {
+    background-color: green;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    background: red;
+}
+
+.color1 {
+    background: green;
+}
+
+.color2 {
+    background: red;
+}
+
+.color3 {
+    background: yellow;
+}
