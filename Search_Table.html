@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<!--<table id="table">
+    <tr>
+        <td data-col="1"></td>
+        <td data-col="2"></td>
+        <td data-col="3"></td>
+    </tr>
+    <tr>
+        <td data-col="1"></td>
+        <td data-col="2"></td>
+        <td data-col="3"></td>
+    </tr>
+    <tr>
+        <td data-col="1"></td>
+        <td data-col="2"></td>
+        <td data-col="3"></td>
+    </tr>
+</table>-->
+
+<!--<table id="table">
+    <tr>
+        <td data-row="1" data-col="1"></td>
+        <td data-row="1" data-col="2"></td>
+        <td data-row="1" data-col="3"></td>
+    </tr>
+    <tr>
+        <td data-row="2" data-col="1"></td>
+        <td data-row="2" data-col="2"></td>
+        <td data-row="2" data-col="3"></td>
+    </tr>
+    <tr>
+        <td data-row="3" data-col="1"></td>
+        <td data-row="3" data-col="2"></td>
+        <td data-row="3" data-col="3"></td>
+    </tr>
+</table>
+<button id="button" type="button">OK</button>-->
+
+<table id="table">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+<script>
+    /*let col = 2;
+    let tds = document.querySelectorAll('#table td[data-col="' + col + '"]');
+
+    for (let td of tds) {
+        td.innerHTML = '!';
+    }*/
+
+    /*let tds = document.querySelectorAll('#table td');
+
+    for (let td of tds) {
+        td.addEventListener('click', function () {
+            let i = this.dataset.col;
+
+            for (let td of tds) {
+                if (td.dataset.col === i) {
+                    td.classList.toggle('active');
+                }
+            }
+        });
+    }*/
+
+    /*let checkCol = 2;
+    let checkRow = 3;
+    let tds = document.querySelectorAll('#table td');
+    let button = document.querySelector('#button');
+
+    button.addEventListener('click', function () {
+        for (let td of tds) {
+            let col = td.dataset.col;
+            let row = td.dataset.row;
+            if (checkCol === +col && checkRow === +row) {
+                td.classList.add('active');
+            }
+        }
+    });*/
+
+    /*let trs = document.querySelectorAll('#table tr');
+    let tds = document.querySelectorAll('#table td');
+
+    for (let tr of trs) {
+        let j = 1;
+        let i = 1;
+        for (let td of tds) {
+            td.dataset.row = String(j);
+            td.dataset.col = String(i);
+            i++;
+            if (i === 4) {
+                i = 1;
+                j++;
+            }
+
+            td.addEventListener('click', function () {
+                this.innerHTML = 'Row: ' + this.dataset.row + ' Column: ' + this.dataset.col;
+            });
+        }
+
+    }*/
+
+    /*let tds = document.querySelectorAll('#table td:nth-child(2)');
+
+    for (let td of tds) {
+        td.innerHTML = '!';
+    }*/
+
+    let tds = document.querySelectorAll('#table tr:nth-child(even) td:nth-child(odd)');
+
+    for (let td of tds) {
+        td.classList.add('active');
+    }
+</script>
+</body>
+</html>
