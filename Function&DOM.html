@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function&DOM</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<!--<p id="elem1"></p>
+<p id="elem2"></p>-->
+
+<!--<p class="elem"></p>
+<p class="elem"></p>
+<p class="elem"></p>-->
+
+<!--<p class="elem">1</p>
+<p class="elem">2</p>
+<p class="elem">3</p>
+<p class="elem">4</p>
+<p class="elem">5</p>-->
+
+<!--<p id="elem1">Juve</p>
+<p id="elem2"></p>-->
+
+<!--<input type="text">-->
+
+<!--<p class="elem"></p>
+<p class="elem"></p>
+<p class="elem"></p>
+<p class="elem"></p>
+<p class="elem"></p>-->
+
+<!--<ul id="parent"></ul>-->
+
+<div id="elem"></div>
+
+<!--<div id="elem">
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+</div>-->
+
+<script>
+    /*function setText(id, text) {
+        let elem = document.getElementById(id);
+        elem.innerHTML = text;
+    }
+
+    setText('elem1', 'text1');
+    setText('elem2', 'text2');*/
+
+    /*function setText(selector, text) {
+        let elem = document.querySelector(selector);
+        elem.innerHTML = text;
+    }
+
+    setText('#elem1', 'text1');
+    setText('#elem2', 'text2');*/
+
+    /*function setAttr(selector, attr, newValue) {
+        let elem = document.querySelector(selector);
+        elem.setAttribute(attr, newValue);
+    }
+
+    setAttr('#elem1', 'data-new', 'new');*/
+
+    /*function setText(selector, text) {
+        let elems = document.querySelectorAll(selector);
+
+        for (let elem of elems) {
+            elem.innerHTML = text;
+        }
+    }
+
+    setText('.elem', 'text');*/
+
+    /*function appendText(selector, text) {
+        let elements = document.querySelectorAll(selector);
+        for (let elem of elements) {
+            elem.innerHTML = text;
+        }
+    }
+
+    appendText('.elem', 'Juventus');*/
+
+    /*function forEach(selector, func) {
+        let elems = document.querySelectorAll(selector);
+
+        for (let elem of elems) {
+            func(elem);
+        }
+    }
+
+    forEach('.elem', function func(elem) {
+        elem.innerHTML += '!';
+    })*/
+
+    /*function forEach(selector, func) {
+        let elems = document.querySelectorAll(selector);
+        let i = 1;
+        for (let elem of elems) {
+            func(elem, i);
+            i++;
+        }
+    }
+
+    forEach('.elem', function (elem, index) {
+        elem.innerHTML = index + ' ' + elem.innerHTML;
+    })*/
+
+    /*function setText(elem, text) {
+        elem.innerHTML = text;
+    }
+
+    let elem1 = document.getElementById('elem1');
+    setText(elem1, 'Juve');
+
+    let elem2 = document.getElementById('elem2');
+    setText(elem2, 'Forza');*/
+
+    /*function appendText(elem, text) {
+        elem.innerHTML += text;
+    }
+
+    let elem1 = document.getElementById('elem1');
+    appendText(elem1, ' Forza');*/
+
+    /*function appendText(elem, text) {
+        elem.innerHTML += text;
+    }
+
+    let elements = document.querySelectorAll('p');
+    for (let elem of elements) {
+        appendText(elem, '!');
+    }*/
+
+    /*function setValue(elem, text) {
+        elem.value = text;
+    }
+
+    let elem = document.querySelector('input');
+    setValue(elem, 'Hello');*/
+
+    /*function setText(elems, text) {
+        for (let elem of elems) {
+            elem.innerHTML = text;
+        }
+    }
+
+    let elems = document.querySelectorAll('p');
+    setText(elems, 'text');*/
+
+    /*function appendText(elements, text) {
+        for (let elem of elements) {
+            elem.innerHTML += text;
+        }
+    }
+
+    let elems = document.querySelectorAll('p');
+    appendText(elems, 'Forza!!!!');*/
+
+    /*function appendElem(elem, text) {
+        let li = document.createElement('li');
+        li.innerHTML = text;
+        elem.appendChild(li);
+    }
+    let elem = document.getElementById('parent');
+    appendElem(elem, 'text');*/
+
+    /*let ul = document.getElementById('parent');
+    let arr = [1, 2, 3, 4, 5, 5];
+
+    for (let elem of arr) {
+        appendElem(ul, elem);
+    }
+
+    function appendElem(ul, text) {
+        let li = document.createElement('li');
+        li.innerHTML = text;
+        ul.appendChild(li);
+    }*/
+
+    /*let div = document.querySelector('#elem');
+    createTable(3, 4, div);
+
+    function createTable(rows, cols, parent) {
+        let table = document.createElement('table');
+
+        for (let i = 0; i < rows; i++) {
+            let tr = document.createElement('tr');
+            for (let j = 0; j < cols; j++) {
+                let td = document.createElement('td');
+                tr.appendChild(td);
+            }
+            table.appendChild(tr);
+        }
+        parent.appendChild(table);
+    }*/
+
+    /*let div = document.querySelector('#elem');
+    div.appendChild(createTable(3, 4));
+
+    function createTable(rows, cols) {
+        let table = document.createElement('table');
+
+        for (let i = 0; i < rows; i++) {
+            let tr = document.createElement('tr');
+            for (let j = 0; j < cols; j++) {
+                let td = document.createElement('td');
+                tr.appendChild(td);
+            }
+            table.appendChild(tr);
+        }
+        return table;
+    }*/
+
+    /*let div = document.querySelector('#elem');
+    let table = createTable(4, 4);
+    table.classList.add('active');
+    div.appendChild(table);
+
+    function createTable(rows, cols) {
+        let table = document.createElement('table');
+
+        for (let i = 0; i < rows; i++) {
+            let tr = document.createElement('tr');
+            for (let j = 0; j < cols; j++) {
+                let td = document.createElement('td');
+                tr.appendChild(td);
+            }
+            table.appendChild(tr);
+        }
+        return table;
+    }*/
+
+    /*let div = document.querySelector('#elem');
+    let arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+    let table = createTableByArr(arr);
+    div.appendChild(table);
+
+    function createTableByArr(arr) {
+        let table = document.createElement('table');
+
+        for (let subArr of arr) {
+            let tr = document.createElement('tr');
+
+            for (let elem of subArr) {
+                let td = document.createElement('td');
+                td.innerHTML = elem;
+                tr.appendChild(td);
+            }
+
+            table.appendChild(tr);
+        }
+        return table;
+    }*/
+
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+    let cols = 4;
+    let div = document.querySelector('#elem');
+    let table = createTableByArr(convertArr(arr, cols));
+    div.appendChild(table);
+
+
+    function convertArr(arr, cols) {
+        let rows = arr.length / cols;
+        let newArr = [];
+        for (let i = 0; i < rows; i++) {
+            let subArr = [];
+            for (let j = 0; j < cols; j++) {
+                subArr.push(arr.shift());
+            }
+            newArr.push(subArr);
+        }
+        return newArr;
+    }
+
+    function createTableByArr(arr) {
+        let table = document.createElement('table');
+
+        for (let subArr of arr) {
+            let tr = document.createElement('tr');
+
+            for (let elem of subArr) {
+                let td = document.createElement('td');
+                td.innerHTML = elem;
+                tr.appendChild(td);
+            }
+
+            table.appendChild(tr);
+        }
+        return table;
+    }
+
+</script>
+</body>
+</html>
